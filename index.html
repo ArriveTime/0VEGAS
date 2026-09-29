@@ -858,6 +858,17 @@ footer a:hover{color:var(--gold)}
   .footer-grid{grid-template-columns:1fr}
 }
 
+/* ======================================================
+   EXPANDED $0 DIRECTORY + FILTERS
+====================================================== */
+.filter-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:0 auto 30px}
+.filter-btn{padding:10px 15px;border:1px solid #3b3b49;border-radius:22px;background:#101018;color:#fff;font-size:11px;font-weight:1000}
+.filter-btn:hover,.filter-btn.active{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;border-color:var(--gold)}
+.expanded-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.mini-status{display:inline-block;margin-top:8px;color:var(--green);font-size:11px;font-weight:900}
+@media(max-width:1050px){.expanded-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.expanded-grid{grid-template-columns:1fr}.filter-btn{font-size:10px;padding:9px 12px}}
+
 </style>
 </head>
 
@@ -1126,6 +1137,78 @@ official destinations and current information.
 
 </section>
 
+
+<!-- EXPANDED FREE DIRECTORY -->
+<section id="expanded-free">
+<div class="container">
+<div class="heading">
+<div class="eyebrow">MORE WAYS TO SPEND $0</div>
+<h2>Expanded Free Vegas Directory</h2>
+<p>Use the filters to quickly find genuinely free experiences and clearly labeled conditional offers. Always check the official source before you go because schedules, access and promotions can change.</p>
+</div>
+<div class="filter-bar" aria-label="Free Vegas filters">
+<button class="filter-btn active" onclick="filterFree('all',this)">ALL $0</button>
+<button class="filter-btn" onclick="filterFree('strip',this)">STRIP</button>
+<button class="filter-btn" onclick="filterFree('downtown',this)">DOWNTOWN</button>
+<button class="filter-btn" onclick="filterFree('kids',this)">WITH KIDS</button>
+<button class="filter-btn" onclick="filterFree('nosignup',this)">NO SIGN-UP</button>
+<button class="filter-btn" onclick="filterFree('transport',this)">FREE TRANSPORT</button>
+<button class="filter-btn" onclick="filterFree('art',this)">ART & PHOTO</button>
+<button class="filter-btn" onclick="filterFree('offstrip',this)">OFF-STRIP</button>
+</div>
+<div class="expanded-grid" id="expandedGrid">
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup art">
+<div class="offer-photo">⛲</div><div class="offer-body"><span class="badge free">ALWAYS A CLASSIC</span><h3>Bellagio Fountains</h3><p>Choreographed water, music and light on the Las Vegas Strip.</p><div class="details">💰 Viewing: $0<br>👤 Sign-up: None<br>📍 Strip</div><div class="buttons"><a class="btn btn-main" href="https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html" target="_blank" rel="noopener noreferrer">SCHEDULE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup art">
+<div class="offer-photo">🌺</div><div class="offer-body"><span class="badge free">FREE ATTRACTION</span><h3>Bellagio Conservatory</h3><p>Seasonal floral and botanical displays in Bellagio's Conservatory.</p><div class="details">💰 Admission: $0<br>👤 Sign-up: None<br>🌺 Displays rotate</div><div class="buttons"><a class="btn btn-main" href="https://bellagio.mgmresorts.com/en/entertainment/conservatory-botanical-garden.html" target="_blank" rel="noopener noreferrer">CURRENT DISPLAY →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="downtown kids nosignup art">
+<div class="offer-photo">✨</div><div class="offer-body"><span class="badge free">FREE LIGHT SHOW</span><h3>Fremont Street & Viva Vision</h3><p>Downtown's LED canopy, public atmosphere and scheduled entertainment.</p><div class="details">💰 Public viewing: $0<br>👤 Sign-up: None<br>📍 Downtown</div><div class="buttons"><a class="btn btn-main" href="https://fremontstreetexperience.com/" target="_blank" rel="noopener noreferrer">WHAT'S ON →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup">
+<div class="offer-photo">🦩</div><div class="offer-body"><span class="badge free">FREE WILDLIFE</span><h3>Flamingo Wildlife Habitat</h3><p>Flamingos, birds, koi, turtles, waterfalls and gardens.</p><div class="details">💰 Admission: $0<br>👤 Sign-up: None<br>👨‍👩‍👧 Family friendly</div><div class="buttons"><a class="btn btn-main" href="https://www.caesars.com/flamingo-las-vegas/things-to-do/wildlife-habitat" target="_blank" rel="noopener noreferrer">OFFICIAL INFO →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup art">
+<div class="offer-photo">📸</div><div class="offer-body"><span class="badge free">FREE PHOTO STOP</span><h3>Welcome to Las Vegas Sign</h3><p>Take your own photo at the famous Las Vegas Boulevard landmark.</p><div class="details">💰 Photo: $0<br>👤 Sign-up: None<br>📸 Bring your own camera</div><div class="buttons"><a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Welcome+to+Fabulous+Las+Vegas+Sign" target="_blank" rel="noopener noreferrer">DIRECTIONS →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip nosignup transport kids">
+<div class="offer-photo">🚋</div><div class="offer-body"><span class="badge free">COMPLIMENTARY TRAMS</span><h3>MGM Express Trams</h3><p>Check current operating status for the ARIA Express and Mandalay Bay Express tram systems.</p><div class="details">🚋 Tram access: Complimentary<br>📍 Selected MGM properties<br>🕐 Hours/status can change</div><div class="buttons"><a class="btn btn-main" href="https://www.mgmresorts.com/en/things-to-do/transportation.html" target="_blank" rel="noopener noreferrer">TRAM STATUS →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip nosignup art kids">
+<div class="offer-photo">🎨</div><div class="offer-body"><span class="badge free">FREE ART</span><h3>ARIA Fine Art Collection</h3><p>Explore public art and installations around ARIA and the MGM Resorts neighborhood.</p><div class="details">💰 Public viewing: $0<br>👤 Sign-up: None<br>📍 Strip</div><div class="buttons"><a class="btn btn-main" href="https://www.mgmresorts.com/en/blog/free-attractions-las-vegas.html" target="_blank" rel="noopener noreferrer">EXPLORE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip nosignup kids art">
+<div class="offer-photo">🌳</div><div class="offer-body"><span class="badge free">FREE PUBLIC SPACE</span><h3>The Park & Park MGM Promenade</h3><p>Stroll the outdoor promenade, landscaping and public art near T-Mobile Arena.</p><div class="details">💰 Walking/sightseeing: $0<br>👤 Sign-up: None<br>📍 Strip</div><div class="buttons"><a class="btn btn-main" href="https://www.mgmresorts.com/en/blog/free-attractions-las-vegas.html" target="_blank" rel="noopener noreferrer">LEARN MORE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="offstrip kids nosignup art">
+<div class="offer-photo">🌵</div><div class="offer-body"><span class="badge free">FREE MOST OF YEAR</span><h3>Ethel M Cactus Garden</h3><p>Three acres with more than 300 species of desert plants in Henderson.</p><div class="details">💰 Regular garden admission: $0<br>👤 Sign-up: None<br>⚠️ Seasonal special events may charge admission</div><div class="buttons"><a class="btn btn-main" href="https://www.ethelm.com/en-us/locations/henderson-flagship/cactus-garden" target="_blank" rel="noopener noreferrer">OFFICIAL INFO →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="offstrip kids nosignup">
+<div class="offer-photo">🍫</div><div class="offer-body"><span class="badge free">FREE SELF-GUIDED VIEWING</span><h3>Ethel M Chocolate Factory</h3><p>Walk the self-guided factory viewing aisle and see chocolate production when operating.</p><div class="details">💰 Viewing aisle: $0<br>👤 Sign-up: None<br>🕐 Production hours vary</div><div class="buttons"><a class="btn btn-main" href="https://www.ethelm.com/en-us/locations/henderson-flagship" target="_blank" rel="noopener noreferrer">OFFICIAL INFO →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup">
+<div class="offer-photo">🥤</div><div class="offer-body"><span class="badge free">FREE TO BROWSE</span><h3>Coca-Cola Store Las Vegas</h3><p>Explore the themed store and photo opportunities; merchandise and tastings cost extra.</p><div class="details">💰 Entry/browsing: $0<br>📸 Photo opportunities<br>🛍️ Purchases optional</div><div class="buttons"><a class="btn btn-main" href="https://www.visitlasvegas.com/experience/post/free-things-to-do-in-las-vegas/" target="_blank" rel="noopener noreferrer">VEGAS GUIDE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup">
+<div class="offer-photo">🍬</div><div class="offer-body"><span class="badge free">FREE TO EXPLORE</span><h3>M&M's World</h3><p>Four floors of colorful displays and photo opportunities; purchases are optional.</p><div class="details">💰 Entry: $0<br>👤 Sign-up: None<br>🛍️ Merchandise costs extra</div><div class="buttons"><a class="btn btn-main" href="https://www.visitlasvegas.com/experience/post/free-things-to-do-in-las-vegas/" target="_blank" rel="noopener noreferrer">VEGAS GUIDE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="offstrip nosignup art kids">
+<div class="offer-photo">🌈</div><div class="offer-body"><span class="badge free">FREE PUBLIC ART</span><h3>Seven Magic Mountains</h3><p>Large-scale colorful desert art installation south of Las Vegas. Verify current access before driving out.</p><div class="details">💰 Public viewing: $0<br>📸 Photo stop<br>🚗 Transportation not included</div><div class="buttons"><a class="btn btn-main" href="https://www.mgmresorts.com/en/blog/free-attractions-las-vegas.html" target="_blank" rel="noopener noreferrer">LEARN MORE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip kids nosignup art">
+<div class="offer-photo">🛶</div><div class="offer-body"><span class="badge free">FREE TO WALK</span><h3>Venetian Grand Canal Shoppes</h3><p>Walk the Venetian-inspired canals, architecture and painted-sky shopping environment.</p><div class="details">💰 Walking/browsing: $0<br>👤 Sign-up: None<br>🛶 Gondola rides cost extra</div><div class="buttons"><a class="btn btn-main" href="https://www.visitlasvegas.com/experience/post/budget-briendly-vegas-incredible-attractions-that-wont-break-the-bank/" target="_blank" rel="noopener noreferrer">VEGAS GUIDE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="downtown kids nosignup art">
+<div class="offer-photo">🛝</div><div class="offer-body"><span class="badge conditional">FREE ENTRY / EXTRAS COST</span><h3>Downtown Container Park</h3><p>Open-air downtown destination with public art, shops, food and family areas.</p><div class="details">💰 General entry: $0*<br>🛍️ Purchases extra<br>⚠️ Check current hours/rules</div><div class="buttons"><a class="btn btn-main" href="https://downtowncontainerpark.com/visit/" target="_blank" rel="noopener noreferrer">OFFICIAL SITE →</a></div></div></article>
+
+<article class="offer expanded-offer" data-tags="strip nosignup art">
+<div class="offer-photo">🌙</div><div class="offer-body"><span class="badge free">COMPLIMENTARY VIEWING</span><h3>Wynn Lake of Dreams</h3><p>Multimedia water, light and imagery production. Check Wynn for current viewing details.</p><div class="details">💰 Complimentary viewing options<br>📍 Wynn Las Vegas<br>🍸 Dining/drinks extra</div><div class="buttons"><a class="btn btn-main" href="https://www.wynnlasvegas.com/entertainment/lake-of-dreams" target="_blank" rel="noopener noreferrer">CURRENT INFO →</a></div></div></article>
+
+</div>
+</div>
+</section>
 
 <!-- FREE ATTRACTIONS -->
 
@@ -3161,6 +3244,19 @@ function escapeHTML(value){
     .replaceAll('"',"&quot;")
     .replaceAll("'","&#039;");
 
+}
+
+
+/* ======================================================
+   EXPANDED DIRECTORY FILTERS
+====================================================== */
+function filterFree(tag,button){
+  document.querySelectorAll('.filter-btn').forEach(btn=>btn.classList.remove('active'));
+  if(button) button.classList.add('active');
+  document.querySelectorAll('.expanded-offer').forEach(card=>{
+    const tags=(card.dataset.tags||'').split(' ');
+    card.style.display=(tag==='all'||tags.includes(tag))?'':'none';
+  });
 }
 
 </script>
