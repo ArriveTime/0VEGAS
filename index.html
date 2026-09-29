@@ -8,18 +8,9 @@
 <title>0VEGAS.com | Everything Free in Las Vegas</title>
 
 <meta name="description"
-content="0VEGAS.com helps you discover free attractions, free events, free parking opportunities, free entertainment, casino promotions and free things to do in Las Vegas. No 0VEGAS account required.">
-
-<meta property="og:title"
-content="0VEGAS.com — Everything Free in Las Vegas">
-
-<meta property="og:description"
-content="See it. Click it. Go. Find free things to do in Las Vegas without creating a 0VEGAS account.">
-
-<meta property="og:type" content="website">
+content="0VEGAS.com — Everything Free in Las Vegas. Discover free attractions, events, parking opportunities, entertainment, outdoor experiences and casino promotions. No 0VEGAS registration required.">
 
 <style>
-
 :root{
   --black:#05050a;
   --panel:#101018;
@@ -35,172 +26,71 @@ content="See it. Click it. Go. Find free things to do in Las Vegas without creat
   --border:#30303d;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
-
-  background:
-    radial-gradient(
-      circle at 10% 5%,
-      rgba(255,43,214,.10),
-      transparent 25%
-    ),
-    radial-gradient(
-      circle at 90% 10%,
-      rgba(0,234,255,.08),
-      transparent 25%
-    ),
-    var(--black);
-
+  background:#05050a;
   color:#fff;
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family:Arial,Helvetica,sans-serif;
   line-height:1.5;
 }
 
-a{
-  color:inherit;
-}
-
-button,
-input{
-  font:inherit;
-}
-
-button{
-  cursor:pointer;
-}
+a{color:inherit}
+button,input{font:inherit}
+button{cursor:pointer}
 
 
 /* ======================================================
-   LIVE LAS VEGAS TOP BAR
+   LIVE TOP BAR
 ====================================================== */
 
 .topbar{
-
-  min-height:40px;
-
+  min-height:42px;
   padding:8px 18px;
-
   display:flex;
-
   justify-content:center;
-
   align-items:center;
-
   flex-wrap:wrap;
-
   gap:11px;
-
   color:#fff;
-
-  background:
-    linear-gradient(
-      90deg,
-      #ff23d4,
-      #8537ff 45%,
-      #008cff 75%,
-      #00d9ff
-    );
-
+  background:linear-gradient(
+    90deg,
+    #ff23d4,
+    #8537ff 42%,
+    #008cff 72%,
+    #00d9ff
+  );
   font-size:12px;
-
   font-weight:800;
-
   letter-spacing:.3px;
-
-  box-shadow:
-    0 0 20px
-    rgba(255,43,214,.18);
-
+  box-shadow:0 0 20px rgba(255,43,214,.18);
 }
 
 .live-top-item{
-
   display:flex;
-
   align-items:center;
-
   gap:5px;
-
   white-space:nowrap;
-
 }
 
-.live-top-item strong{
+.live-top-item strong{font-weight:1000}
 
-  color:#fff;
-
-  font-weight:1000;
-
-}
-
-.top-divider{
-
-  opacity:.45;
-
-}
+.top-divider{opacity:.45}
 
 .traffic-top{
-
   color:#fff;
-
   text-decoration:none;
-
   white-space:nowrap;
-
 }
 
-.traffic-top strong{
+.traffic-top strong{color:#8dffb3}
+.traffic-top:hover{text-decoration:underline}
 
-  color:#8dffb3;
-
-}
-
-.traffic-top:hover{
-
-  text-decoration:underline;
-
-}
-
-.top-slogan{
-
-  white-space:nowrap;
-
-}
-
-.top-slogan strong{
-
-  color:#fff5a7;
-
-}
-
-.weather-credit{
-
-  color:rgba(255,255,255,.72);
-
-  text-decoration:none;
-
-  font-size:9px;
-
-}
-
-.weather-credit:hover{
-
-  color:#fff;
-
-}
+.top-slogan{white-space:nowrap}
+.top-slogan strong{color:#fff5a7}
 
 
 /* ======================================================
@@ -208,391 +98,253 @@ button{
 ====================================================== */
 
 header{
-
   position:sticky;
-
   top:0;
-
   z-index:1000;
-
-  backdrop-filter:blur(16px);
-
-  background:
-    rgba(5,5,10,.94);
-
-  border-bottom:
-    1px solid
-    rgba(255,255,255,.08);
-
+  backdrop-filter:blur(18px);
+  background:rgba(3,3,8,.93);
+  border-bottom:1px solid rgba(255,212,59,.18);
 }
 
 .nav{
-
   max-width:1450px;
-
   margin:auto;
-
   padding:14px 24px;
-
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
   gap:20px;
-
 }
 
 .logo{
-
   text-decoration:none;
-
   font-size:31px;
-
   font-weight:1000;
-
   letter-spacing:-2px;
-
 }
 
 .logo span{
-
   color:var(--gold);
-
   text-shadow:
-    0 0 20px
-    rgba(255,212,59,.65);
-
+    0 0 12px rgba(255,212,59,.8),
+    0 0 30px rgba(255,174,0,.5);
 }
 
 nav{
-
   display:flex;
-
   gap:19px;
-
   align-items:center;
-
 }
 
 nav a{
-
   text-decoration:none;
-
   font-size:13px;
-
   font-weight:800;
-
   color:#eee;
-
 }
 
-nav a:hover{
-
-  color:var(--gold);
-
-}
+nav a:hover{color:var(--gold)}
 
 .nav-cta{
-
-  color:#000 !important;
-
-  background:var(--gold);
-
-  padding:10px 15px;
-
+  color:#000!important;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  padding:10px 17px;
   border-radius:25px;
-
 }
 
 
 /* ======================================================
-   HERO
+   NEW LAS VEGAS LANDING PAGE
 ====================================================== */
 
 .hero{
-
-  min-height:760px;
-
+  min-height:780px;
   position:relative;
-
   overflow:hidden;
-
   display:flex;
-
   align-items:center;
-
   justify-content:center;
-
   text-align:center;
-
-  padding:
-    100px 20px 80px;
-
-  /*
-    Upload a licensed Las Vegas image named:
-
-    vegas-hero.jpg
-
-    into the same GitHub folder as index.html.
-  */
+  padding:105px 20px 85px;
 
   background:
-
     linear-gradient(
       to bottom,
-      rgba(3,3,8,.25),
-      rgba(3,3,8,.70) 55%,
-      #05050a
+      rgba(0,0,8,.22) 0%,
+      rgba(0,0,8,.34) 35%,
+      rgba(0,0,8,.70) 76%,
+      #05050a 100%
     ),
+    url("vegas-hero.png") center center / cover no-repeat;
+}
 
-    url("vegas-hero.jpg")
-    center/cover
-    no-repeat;
-
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.34),
+      transparent 30%,
+      transparent 70%,
+      rgba(0,0,0,.34)
+    );
+  pointer-events:none;
 }
 
 .hero::after{
-
   content:"";
-
   position:absolute;
-
   inset:0;
-
   background:
-
     radial-gradient(
-      circle at 20% 25%,
-      rgba(255,43,214,.16),
-      transparent 30%
-    ),
-
-    radial-gradient(
-      circle at 80% 30%,
-      rgba(0,234,255,.13),
+      circle at 50% 36%,
+      rgba(255,204,44,.08),
       transparent 30%
     );
-
   pointer-events:none;
-
 }
 
 .hero-content{
-
   width:100%;
-
   max-width:1050px;
-
   position:relative;
-
   z-index:2;
-
 }
 
 .zero{
-
-  width:125px;
-
-  height:125px;
-
-  margin:
-    0 auto 20px;
-
+  width:150px;
+  height:150px;
+  margin:0 auto 22px;
   display:flex;
-
   align-items:center;
-
   justify-content:center;
 
-  border:
-    9px solid
-    var(--gold);
-
+  border:10px solid #ffe36b;
   border-radius:50%;
 
-  color:var(--gold);
+  background:rgba(0,0,0,.43);
 
-  font-size:44px;
+  color:#ffe36b;
 
+  font-size:69px;
+  line-height:1;
   font-weight:1000;
 
   box-shadow:
+    0 0 10px #fff2a0,
+    0 0 25px rgba(255,212,59,.95),
+    0 0 60px rgba(255,174,0,.7),
+    inset 0 0 25px rgba(255,212,59,.18);
 
-    0 0 20px
-    rgba(255,212,59,.9),
+  text-shadow:
+    0 0 10px rgba(255,255,255,.45),
+    0 0 20px rgba(255,212,59,.8);
+}
 
-    0 0 60px
-    rgba(255,174,0,.4),
-
-    inset 0 0 25px
-    rgba(255,212,59,.2);
-
+.hero-kicker{
+  color:#ffe88b;
+  font-size:12px;
+  font-weight:1000;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  text-shadow:0 2px 12px #000;
+  margin-bottom:12px;
 }
 
 .hero h1{
-
   margin:0;
-
-  font-size:
-    clamp(
-      58px,
-      9vw,
-      108px
-    );
-
-  line-height:.95;
-
+  font-size:clamp(62px,9vw,112px);
+  line-height:.92;
   letter-spacing:-6px;
-
   text-shadow:
-    0 4px 25px #000;
-
+    0 4px 15px #000,
+    0 0 40px rgba(0,0,0,.9);
 }
 
 .hero h1 span{
-
-  color:var(--gold);
-
+  color:#ffe36b;
+  text-shadow:
+    0 0 12px rgba(255,230,110,.9),
+    0 0 32px rgba(255,174,0,.6);
 }
 
 .tagline{
-
-  margin:
-    18px 0 5px;
-
-  font-size:
-    clamp(
-      23px,
-      3vw,
-      35px
-    );
-
-  font-weight:900;
-
+  margin:18px 0 8px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(25px,3vw,39px);
+  font-weight:700;
+  color:#fff;
   text-shadow:
-    0 3px 15px #000;
-
+    0 3px 12px #000,
+    0 0 25px #000;
 }
 
 .hero p{
-
-  max-width:760px;
-
-  margin:
-    12px auto 30px;
-
-  color:#eee;
-
-  font-size:17px;
-
+  max-width:790px;
+  margin:12px auto 29px;
+  color:#f0f0f0;
+  font-size:16px;
+  font-weight:600;
   text-shadow:
-    0 2px 12px #000;
-
+    0 2px 7px #000,
+    0 0 18px #000;
 }
 
 .search{
-
   max-width:850px;
-
-  margin:
-    0 auto 20px;
-
+  margin:0 auto 19px;
   padding:6px;
-
   display:flex;
-
-  background:#fff;
-
+  background:rgba(255,255,255,.97);
+  border:1px solid rgba(255,215,70,.55);
   border-radius:50px;
-
   box-shadow:
-    0 0 40px
-    rgba(0,234,255,.18);
-
+    0 0 20px rgba(0,0,0,.7),
+    0 0 35px rgba(255,193,7,.22);
 }
 
 .search input{
-
   flex:1;
-
   border:0;
-
   outline:0;
-
-  padding:
-    17px 22px;
-
+  padding:17px 22px;
   border-radius:50px;
-
   min-width:0;
-
+  color:#111;
 }
 
 .search button{
-
   border:0;
-
-  padding:
-    0 30px;
-
+  padding:0 30px;
   border-radius:50px;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--gold),
-      var(--gold2)
-    );
-
+  background:linear-gradient(135deg,#ffe36b,#ffae00);
   color:#000;
-
   font-weight:1000;
-
 }
 
 .quick{
-
   display:flex;
-
   justify-content:center;
-
   flex-wrap:wrap;
-
   gap:9px;
-
 }
 
 .quick button{
-
-  padding:
-    11px 16px;
-
-  border:
-    1px solid
-    rgba(255,255,255,.3);
-
+  padding:11px 16px;
+  border:1px solid rgba(255,218,83,.55);
   border-radius:25px;
-
-  background:
-    rgba(5,5,10,.75);
-
+  background:rgba(0,0,0,.68);
   color:#fff;
-
   font-size:12px;
-
   font-weight:900;
-
+  backdrop-filter:blur(6px);
 }
 
 .quick button:hover{
-
-  color:var(--gold);
-
-  border-color:
-    var(--gold);
-
+  color:#000;
+  background:var(--gold);
 }
 
 
@@ -601,55 +353,33 @@ nav a:hover{
 ====================================================== */
 
 .no-registration{
-
   background:#09090e;
-
-  border-top:
-    1px solid #242430;
-
-  border-bottom:
-    1px solid #242430;
-
+  border-top:1px solid rgba(255,212,59,.22);
+  border-bottom:1px solid #242430;
 }
 
 .no-reg-inner{
-
   max-width:1450px;
-
   margin:auto;
-
   padding:25px;
-
   display:flex;
-
   justify-content:center;
-
   align-items:center;
-
   gap:22px;
-
   text-align:center;
-
   flex-wrap:wrap;
-
 }
 
 .no-reg-big{
-
   color:var(--green);
-
   font-size:20px;
-
   font-weight:1000;
-
 }
 
 .no-reg-copy{
-
-  color:#bdbdc7;
-
+  color:var(--gold);
   font-size:14px;
-
+  font-weight:900;
 }
 
 
@@ -658,79 +388,40 @@ nav a:hover{
 ====================================================== */
 
 .container{
-
-  width:
-    min(
-      1450px,
-      calc(100% - 40px)
-    );
-
+  width:min(1450px,calc(100% - 40px));
   margin:auto;
-
 }
 
-section{
-
-  padding:
-    85px 0;
-
-}
+section{padding:85px 0}
 
 .heading{
-
   text-align:center;
-
   margin-bottom:42px;
-
 }
 
 .eyebrow{
-
   color:var(--gold);
-
   font-size:12px;
-
   font-weight:1000;
-
   letter-spacing:2px;
-
 }
 
 .heading h2{
-
-  margin:
-    7px 0 10px;
-
-  font-size:
-    clamp(
-      34px,
-      5vw,
-      54px
-    );
-
+  margin:7px 0 10px;
+  font-size:clamp(34px,5vw,54px);
   letter-spacing:-2px;
-
 }
 
 .heading p{
-
   max-width:780px;
-
   margin:auto;
-
   color:var(--muted);
-
 }
 
 .grid{
-
   display:grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
+  grid-template-columns:repeat(4,1fr);
   gap:20px;
-
 }
 
 
@@ -739,64 +430,29 @@ section{
 ====================================================== */
 
 .category{
-
   display:block;
-
   text-decoration:none;
-
-  padding:
-    28px 20px;
-
+  padding:28px 20px;
   text-align:center;
-
   border-radius:22px;
-
-  border:
-    1px solid
-    var(--border);
-
-  background:
-    linear-gradient(
-      145deg,
-      #171722,
-      #0b0b11
-    );
-
+  border:1px solid var(--border);
+  background:linear-gradient(145deg,#171722,#0b0b11);
   transition:.25s;
-
 }
 
 .category:hover{
-
-  transform:
-    translateY(-5px);
-
-  border-color:
-    var(--gold);
-
+  transform:translateY(-5px);
+  border-color:var(--gold);
+  box-shadow:0 10px 35px rgba(255,193,7,.09);
 }
 
-.category-icon{
-
-  font-size:40px;
-
-}
-
-.category h3{
-
-  margin:
-    12px 0 5px;
-
-}
+.category-icon{font-size:40px}
+.category h3{margin:12px 0 5px}
 
 .category p{
-
   margin:0;
-
   color:#999;
-
   font-size:13px;
-
 }
 
 
@@ -805,316 +461,159 @@ section{
 ====================================================== */
 
 .offer{
-
   overflow:hidden;
-
-  border:
-    1px solid
-    var(--border);
-
+  border:1px solid var(--border);
   border-radius:23px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #171722,
-      #0b0b11
-    );
-
+  background:linear-gradient(145deg,#171722,#0b0b11);
   transition:.25s;
-
 }
 
 .offer:hover{
-
-  transform:
-    translateY(-5px);
-
-  border-color:#555;
-
+  transform:translateY(-5px);
+  border-color:#655c39;
 }
 
 .offer-photo{
-
   height:160px;
-
   display:flex;
-
   align-items:center;
-
   justify-content:center;
-
   font-size:65px;
-
   background:
-
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(255,43,214,.22),
-      transparent 35%
-    ),
-
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(0,234,255,.16),
-      transparent 35%
-    ),
-
+    radial-gradient(circle at 20% 20%,rgba(255,43,214,.22),transparent 35%),
+    radial-gradient(circle at 80% 80%,rgba(255,212,59,.16),transparent 35%),
     #11111a;
-
 }
 
-.offer-body{
-
-  padding:23px;
-
-}
+.offer-body{padding:23px}
 
 .badge{
-
   display:inline-block;
-
-  padding:
-    6px 9px;
-
+  padding:6px 9px;
   border-radius:20px;
-
   font-size:10px;
-
   font-weight:1000;
-
   letter-spacing:.5px;
-
   margin-bottom:8px;
-
 }
 
 .free{
-
   color:var(--green);
-
-  border:
-    1px solid
-    rgba(85,255,154,.25);
-
-  background:
-    rgba(85,255,154,.08);
-
+  border:1px solid rgba(85,255,154,.25);
+  background:rgba(85,255,154,.08);
 }
 
 .conditional{
-
   color:var(--gold);
-
-  border:
-    1px solid
-    rgba(255,212,59,.3);
-
-  background:
-    rgba(255,212,59,.08);
-
+  border:1px solid rgba(255,212,59,.3);
+  background:rgba(255,212,59,.08);
 }
 
 .membership{
-
   color:var(--pink);
-
-  border:
-    1px solid
-    rgba(255,43,214,.3);
-
-  background:
-    rgba(255,43,214,.08);
-
+  border:1px solid rgba(255,43,214,.3);
+  background:rgba(255,43,214,.08);
 }
 
 .offer h3{
-
   font-size:21px;
-
-  margin:
-    4px 0 8px;
-
+  margin:4px 0 8px;
 }
 
 .offer p{
-
   color:#aaaab6;
-
   font-size:13px;
-
   min-height:60px;
-
 }
 
 .details{
-
-  margin:
-    15px 0;
-
+  margin:15px 0;
   padding:13px;
-
   background:#09090f;
-
   border-radius:12px;
-
   font-size:12px;
-
   color:#ccc;
-
 }
 
 .price{
-
   color:var(--gold);
-
   font-size:31px;
-
   font-weight:1000;
-
 }
 
 .buttons{
-
   display:flex;
-
   gap:8px;
-
   flex-wrap:wrap;
-
   margin-top:15px;
-
 }
 
 .btn{
-
   display:inline-block;
-
   text-decoration:none;
-
   border-radius:9px;
-
-  padding:
-    10px 13px;
-
+  padding:10px 13px;
   font-size:11px;
-
   font-weight:1000;
-
 }
 
 .btn-main{
-
-  background:var(--gold);
-
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
   color:#000;
-
 }
 
 .btn-map{
-
-  border:
-    1px solid
-    #454553;
-
+  border:1px solid #454553;
   color:#fff;
-
 }
 
-.btn:hover{
-
-  opacity:.85;
-
-}
+.btn:hover{opacity:.85}
 
 .third-party{
-
   margin-top:12px;
-
   color:#70707e;
-
   font-size:10px;
-
 }
 
 
 /* ======================================================
-   LIVE INFORMATION SECTION
+   LIVE INFO
 ====================================================== */
 
 .live{
-
-  background:
-
-    linear-gradient(
-      90deg,
-      rgba(255,43,214,.06),
-      rgba(0,234,255,.06)
-    );
-
-  border-top:
-    1px solid #22222c;
-
-  border-bottom:
-    1px solid #22222c;
-
+  background:linear-gradient(
+    90deg,
+    rgba(255,43,214,.06),
+    rgba(255,212,59,.06)
+  );
+  border-top:1px solid #22222c;
+  border-bottom:1px solid #22222c;
 }
 
 .live-grid{
-
   display:grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
+  grid-template-columns:repeat(4,1fr);
 }
 
 .live-box{
-
   text-align:center;
-
   padding:25px;
-
-  border-right:
-    1px solid #292935;
-
+  border-right:1px solid #292935;
 }
 
-.live-box:last-child{
-
-  border-right:0;
-
-}
-
-.live-icon{
-
-  font-size:30px;
-
-}
-
-.live-box h3{
-
-  margin:
-    7px 0;
-
-}
+.live-box:last-child{border-right:0}
+.live-icon{font-size:30px}
+.live-box h3{margin:7px 0}
 
 .live-box p{
-
   color:#999;
-
   font-size:12px;
-
 }
 
 .live-link{
-
-  color:var(--cyan);
-
+  color:var(--gold);
   font-weight:900;
-
   text-decoration:none;
-
 }
 
 
@@ -1123,121 +622,57 @@ section{
 ====================================================== */
 
 .promise{
-
-  border:
-    1px solid
-    rgba(255,212,59,.45);
-
+  border:1px solid rgba(255,212,59,.45);
   border-radius:28px;
-
-  padding:
-    55px 30px;
-
+  padding:55px 30px;
   text-align:center;
-
   background:
-
-    radial-gradient(
-      circle at center,
-      rgba(255,212,59,.08),
-      transparent 50%
-    ),
-
+    radial-gradient(circle at center,rgba(255,212,59,.08),transparent 50%),
     #0b0b10;
-
 }
 
 .promise h2{
-
-  font-size:
-    clamp(
-      35px,
-      5vw,
-      55px
-    );
-
-  margin:
-    0 0 10px;
-
+  font-size:clamp(35px,5vw,55px);
+  margin:0 0 10px;
 }
 
-.promise strong{
-
-  color:var(--gold);
-
-}
+.promise strong{color:var(--gold)}
 
 
 /* ======================================================
    LEGAL
 ====================================================== */
 
-.legal{
-
-  background:#08080c;
-
-}
+.legal{background:#08080c}
 
 .legal-box{
-
   max-width:1100px;
-
   margin:auto;
-
-  border:
-    1px solid #292934;
-
+  border:1px solid #292934;
   border-radius:22px;
-
   padding:30px;
-
 }
 
-.legal-box h3{
-
-  color:var(--gold);
-
-}
+.legal-box h3{color:var(--gold)}
 
 .legal-box p,
 .legal-box li{
-
   color:#90909c;
-
   font-size:12px;
-
 }
 
-.legal-box li{
-
-  margin:
-    8px 0;
-
-}
+.legal-box li{margin:8px 0}
 
 .gambling{
-
   margin-top:20px;
-
   padding:18px;
-
-  border:
-    1px solid
-    rgba(255,82,103,.35);
-
+  border:1px solid rgba(255,82,103,.35);
   border-radius:14px;
-
   color:#bbb;
-
   font-size:12px;
-
 }
 
-.gambling strong{
-
-  color:#fff;
-
-}
+.gambling strong{color:#fff}
 
 
 /* ======================================================
@@ -1245,117 +680,58 @@ section{
 ====================================================== */
 
 footer{
-
-  padding:
-    55px 0 30px;
-
-  border-top:
-    1px solid #22222c;
-
+  padding:55px 0 30px;
+  border-top:1px solid #22222c;
 }
 
 .footer-grid{
-
   display:grid;
-
-  grid-template-columns:
-    2fr 1fr 1fr 1fr;
-
+  grid-template-columns:2fr 1fr 1fr 1fr;
   gap:30px;
-
 }
 
 .footer-logo{
-
   font-size:31px;
-
   font-weight:1000;
-
 }
 
-.footer-logo span{
-
-  color:var(--gold);
-
-}
+.footer-logo span{color:var(--gold)}
 
 footer p{
-
   color:#858591;
-
   font-size:12px;
-
 }
 
-footer h4{
-
-  margin-top:0;
-
-}
+footer h4{margin-top:0}
 
 footer a{
-
   display:block;
-
   color:#888894;
-
   text-decoration:none;
-
   font-size:12px;
-
-  margin:
-    8px 0;
-
+  margin:8px 0;
 }
 
-footer a:hover{
-
-  color:var(--gold);
-
-}
+footer a:hover{color:var(--gold)}
 
 .copyright{
-
   margin-top:35px;
-
   padding-top:20px;
-
-  border-top:
-    1px solid #1e1e26;
-
+  border-top:1px solid #1e1e26;
   color:#666;
-
   font-size:11px;
-
 }
 
-
-/* ======================================================
-   SEARCH MESSAGE
-====================================================== */
-
 #searchMessage{
-
   display:none;
-
-  margin:
-    0 auto 30px;
-
+  margin:0 auto 30px;
   max-width:900px;
-
   padding:15px;
-
   text-align:center;
-
-  border:
-    1px solid #343442;
-
+  border:1px solid #343442;
   border-radius:12px;
-
   background:#101018;
-
   color:#ccc;
-
 }
 
 
@@ -1364,189 +740,104 @@ footer a:hover{
 ====================================================== */
 
 @media(max-width:1050px){
-
-  nav{
-    display:none;
-  }
-
-  .grid{
-    grid-template-columns:
-      repeat(2,1fr);
-  }
-
-  .footer-grid{
-    grid-template-columns:
-      1fr 1fr;
-  }
-
+  nav{display:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
 }
 
 @media(max-width:700px){
 
   .topbar{
-
     font-size:10px;
-
     gap:6px;
-
-    padding:
-      7px 8px;
-
+    padding:7px 8px;
   }
 
-  .top-divider{
-
-    display:none;
-
-  }
+  .top-divider{display:none}
 
   .top-slogan{
-
     width:100%;
-
     text-align:center;
-
   }
 
   .container{
-
-    width:
-      min(
-        100% - 26px,
-        1450px
-      );
-
+    width:min(100% - 26px,1450px);
   }
 
-  section{
-
-    padding:
-      65px 0;
-
-  }
+  section{padding:65px 0}
 
   .hero{
-
-    min-height:700px;
-
-    padding:
-      80px 15px 65px;
-
+    min-height:720px;
+    padding:75px 15px 60px;
+    background-position:center center;
   }
 
   .hero h1{
-
     letter-spacing:-4px;
+  }
 
+  .hero-kicker{
+    letter-spacing:3px;
   }
 
   .zero{
-
-    width:100px;
-
-    height:100px;
-
+    width:115px;
+    height:115px;
+    font-size:52px;
   }
 
   .search{
-
     flex-direction:column;
-
     gap:8px;
-
     background:transparent;
-
+    border:0;
+    box-shadow:none;
   }
 
   .search input,
   .search button{
-
     width:100%;
-
     padding:16px;
-
   }
 
-  .grid{
-
-    grid-template-columns:1fr;
-
-  }
+  .grid{grid-template-columns:1fr}
 
   .live-grid{
-
-    grid-template-columns:
-      1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
   }
 
   .live-box{
-
     border-right:0;
-
-    border-bottom:
-      1px solid #292935;
-
+    border-bottom:1px solid #292935;
   }
 
-  .footer-grid{
-
-    grid-template-columns:1fr;
-
-  }
-
+  .footer-grid{grid-template-columns:1fr}
 }
 
 </style>
 </head>
 
-
 <body>
 
 
-<!-- ====================================================
-     LIVE TOP BAR
-==================================================== -->
+<!-- LIVE LAS VEGAS BAR -->
 
 <div class="topbar">
 
   <div class="live-top-item">
-
     🕐 LAS VEGAS
-
-    <strong id="vegasTime">
-      --:-- --
-    </strong>
-
+    <strong id="vegasTime">--:-- --</strong>
   </div>
 
-
-  <span class="top-divider">
-    |
-  </span>
-
+  <span class="top-divider">|</span>
 
   <div class="live-top-item">
-
-    <span id="weatherIcon">
-      ☀️
-    </span>
-
-    <strong id="vegasTemp">
-      --°F
-    </strong>
-
-    <span id="vegasWeather">
-      Loading...
-    </span>
-
+    <span id="weatherIcon">☀️</span>
+    <strong id="vegasTemp">--°F</strong>
+    <span id="vegasWeather">Loading...</span>
   </div>
 
-
-  <span class="top-divider">
-    |
-  </span>
-
+  <span class="top-divider">|</span>
 
   <a
     class="traffic-top"
@@ -1554,83 +845,41 @@ footer a:hover{
     target="_blank"
     rel="noopener noreferrer"
   >
-
     🚦 TRAFFIC:
-
-    <strong>
-      LIVE UPDATE
-    </strong>
-
+    <strong>LIVE UPDATE</strong>
   </a>
 
-
-  <span class="top-divider">
-    |
-  </span>
-
+  <span class="top-divider">|</span>
 
   <div class="top-slogan">
-
     VEGAS IS EXPENSIVE.
-
-    <strong>
-      0VEGAS ISN'T.
-    </strong>
-
+    <strong>0VEGAS ISN'T.</strong>
   </div>
 
 </div>
 
 
-<!-- ====================================================
-     HEADER
-==================================================== -->
+<!-- HEADER -->
 
 <header>
 
 <div class="nav">
 
 <a href="#" class="logo">
-
 <span>0</span>VEGAS.com
-
 </a>
-
 
 <nav>
 
-<a href="#free">
-Free Things
-</a>
+<a href="#free">Free Things</a>
+<a href="#parking">Parking</a>
+<a href="#events">Events</a>
+<a href="#casino">Free Play</a>
+<a href="#outdoors">Outdoors</a>
+<a href="#live">Vegas Live</a>
+<a href="#legal">Disclosures</a>
 
-<a href="#parking">
-Parking
-</a>
-
-<a href="#events">
-Events
-</a>
-
-<a href="#casino">
-Free Play
-</a>
-
-<a href="#outdoors">
-Outdoors
-</a>
-
-<a href="#live">
-Vegas Live
-</a>
-
-<a href="#legal">
-Disclosures
-</a>
-
-<a
-href="#free"
-class="nav-cta"
->
+<a href="#free" class="nav-cta">
 FIND $0
 </a>
 
@@ -1642,43 +891,35 @@ FIND $0
 
 
 <!-- ====================================================
-     HERO
+     NEW VEGAS HERO
 ==================================================== -->
 
 <section class="hero">
 
 <div class="hero-content">
 
-<div class="zero">
-
-$0
-
+<div class="hero-kicker">
+THE FREE SIDE OF LAS VEGAS
 </div>
 
+<div class="zero">
+0
+</div>
 
 <h1>
-
 <span>0</span>VEGAS.com
-
 </h1>
 
-
 <div class="tagline">
-
 Everything Free in Las Vegas
-
 </div>
 
-
 <p>
-
 Free attractions. Free entertainment. Free events.
 Free parking opportunities. Free outdoor experiences
 and qualifying casino promotions — without creating
 a 0VEGAS account.
-
 </p>
-
 
 <div class="search">
 
@@ -1690,55 +931,35 @@ aria-label="Search free things in Las Vegas"
 >
 
 <button onclick="searchOffers()">
-
 FIND $0
-
 </button>
 
 </div>
 
-
 <div class="quick">
 
 <button onclick="go('free')">
-
 🔥 FREE NOW
-
 </button>
-
 
 <button onclick="go('parking')">
-
 🚗 FREE PARKING
-
 </button>
-
 
 <button onclick="go('events')">
-
 🎉 FREE EVENTS
-
 </button>
-
 
 <button onclick="go('casino')">
-
 🎰 FREE PLAY
-
 </button>
-
 
 <button onclick="go('outdoors')">
-
 🥾 OUTDOORS
-
 </button>
 
-
 <button onclick="go('live')">
-
 🌡️ VEGAS LIVE
-
 </button>
 
 </div>
@@ -1748,76 +969,52 @@ FIND $0
 </section>
 
 
-<!-- ====================================================
-     NO REGISTRATION
-==================================================== -->
+<!-- NO REGISTRATION -->
 
 <div class="no-registration">
 
 <div class="no-reg-inner">
 
-
 <div class="no-reg-big">
-
 ✓ NO 0VEGAS ACCOUNT
-
 </div>
 
-
 <div class="no-reg-big">
-
 ✓ NO EMAIL REQUIRED
-
 </div>
-
 
 <div class="no-reg-big">
-
 ✓ NO 0VEGAS REGISTRATION
-
 </div>
-
 
 <div class="no-reg-copy">
-
 SEE IT → CLICK IT → GO
-
-</div>
-
-
 </div>
 
 </div>
 
+</div>
 
-<!-- ====================================================
-     CATEGORIES
-==================================================== -->
+
+<!-- CATEGORIES -->
 
 <section>
 
 <div class="container">
 
-
 <div class="heading">
 
 <div class="eyebrow">
-
 EVERYTHING $0
-
 </div>
 
 <h2>
-
 What Do You Want to Do?
-
 </h2>
 
 <p>
-
-Choose a category and go directly to relevant
-offers, official destinations and current information.
-
+Choose a category and go directly to relevant offers,
+official destinations and current information.
 </p>
 
 </div>
@@ -1825,214 +1022,53 @@ offers, official destinations and current information.
 
 <div class="grid">
 
-
-<a
-class="category"
-href="#free"
->
-
-<div class="category-icon">
-
-⛲
-
-</div>
-
-<h3>
-
-Free Attractions
-
-</h3>
-
-<p>
-
-Fountains, gardens, landmarks and more.
-
-</p>
-
+<a class="category" href="#free">
+<div class="category-icon">⛲</div>
+<h3>Free Attractions</h3>
+<p>Fountains, gardens, landmarks and more.</p>
 </a>
 
-
-<a
-class="category"
-href="#parking"
->
-
-<div class="category-icon">
-
-🚗
-
-</div>
-
-<h3>
-
-Free Parking
-
-</h3>
-
-<p>
-
-Properties with complimentary parking opportunities.
-
-</p>
-
+<a class="category" href="#parking">
+<div class="category-icon">🚗</div>
+<h3>Free Parking</h3>
+<p>Properties with complimentary parking opportunities.</p>
 </a>
 
-
-<a
-class="category"
-href="#events"
->
-
-<div class="category-icon">
-
-🎉
-
-</div>
-
-<h3>
-
-Free Events
-
-</h3>
-
-<p>
-
-Current concerts, festivals and public events.
-
-</p>
-
+<a class="category" href="#events">
+<div class="category-icon">🎉</div>
+<h3>Free Events</h3>
+<p>Current concerts, festivals and public events.</p>
 </a>
 
-
-<a
-class="category"
-href="#casino"
->
-
-<div class="category-icon">
-
-🎰
-
-</div>
-
-<h3>
-
-Free Play
-
-</h3>
-
-<p>
-
-Casino promotional programs and official terms.
-
-</p>
-
+<a class="category" href="#casino">
+<div class="category-icon">🎰</div>
+<h3>Free Play</h3>
+<p>Casino promotional programs and official terms.</p>
 </a>
 
-
-<a
-class="category"
-href="#free"
->
-
-<div class="category-icon">
-
-🎵
-
-</div>
-
-<h3>
-
-Free Entertainment
-
-</h3>
-
-<p>
-
-Shows, lights, music and public spectacles.
-
-</p>
-
+<a class="category" href="#free">
+<div class="category-icon">🎵</div>
+<h3>Free Entertainment</h3>
+<p>Shows, lights, music and public spectacles.</p>
 </a>
 
-
-<a
-class="category"
-href="#outdoors"
->
-
-<div class="category-icon">
-
-🥾
-
-</div>
-
-<h3>
-
-Free Outdoors
-
-</h3>
-
-<p>
-
-Trails, viewpoints and outdoor experiences.
-
-</p>
-
+<a class="category" href="#outdoors">
+<div class="category-icon">🥾</div>
+<h3>Free Outdoors</h3>
+<p>Trails, viewpoints and outdoor experiences.</p>
 </a>
 
-
-<a
-class="category"
-href="#free"
->
-
-<div class="category-icon">
-
-👨‍👩‍👧
-
-</div>
-
-<h3>
-
-Free With Kids
-
-</h3>
-
-<p>
-
-Family-friendly $0 experiences.
-
-</p>
-
+<a class="category" href="#free">
+<div class="category-icon">👨‍👩‍👧</div>
+<h3>Free With Kids</h3>
+<p>Family-friendly $0 experiences.</p>
 </a>
 
-
-<a
-class="category"
-href="#free"
->
-
-<div class="category-icon">
-
-📸
-
-</div>
-
-<h3>
-
-Free Photo Spots
-
-</h3>
-
-<p>
-
-Iconic Vegas pictures without admission.
-
-</p>
-
+<a class="category" href="#free">
+<div class="category-icon">📸</div>
+<h3>Free Photo Spots</h3>
+<p>Iconic Vegas pictures without admission.</p>
 </a>
-
 
 </div>
 
@@ -2041,117 +1077,66 @@ Iconic Vegas pictures without admission.
 </section>
 
 
-<!-- ====================================================
-     FREE ATTRACTIONS
-==================================================== -->
+<!-- FREE ATTRACTIONS -->
 
 <section id="free">
 
 <div class="container">
 
-
 <div class="heading">
 
 <div class="eyebrow">
-
-$0 VERIFIED DIRECTORY
-
+$0 DIRECTORY
 </div>
 
 <h2>
-
 Free Las Vegas Experiences
-
 </h2>
 
 <p>
-
-Click directly to the official destination
-or open directions.
-
+Click directly to the official destination or open directions.
 No 0VEGAS account is required.
-
 </p>
 
 </div>
 
+<div id="searchMessage"></div>
 
-<div id="searchMessage">
-
-</div>
-
-
-<div
-class="grid"
-id="offerGrid"
->
+<div class="grid" id="offerGrid">
 
 
-<!-- BELLAGIO FOUNTAINS -->
+<!-- BELLAGIO -->
 
 <article
 class="offer"
 data-search="bellagio fountains water show attraction strip free"
 >
 
-<div class="offer-photo">
-
-⛲
-
-</div>
-
+<div class="offer-photo">⛲</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 $0 ATTRACTION
-
 </span>
 
-
-<h3>
-
-Fountains of Bellagio
-
-</h3>
-
+<h3>Fountains of Bellagio</h3>
 
 <p>
-
 One of the Strip's signature water,
 music and light spectacles.
-
-Check Bellagio for today's current schedule.
-
+Check Bellagio for the current schedule.
 </p>
 
-
 <div class="details">
-
-💰 Viewing: $0
-
-<br>
-
-📍 Bellagio — Las Vegas Strip
-
-<br>
-
+💰 Viewing: $0<br>
+📍 Bellagio — Las Vegas Strip<br>
 👤 0VEGAS account: Not required
-
 </div>
 
-
-<div class="price">
-
-$0
-
-</div>
-
+<div class="price">$0</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2159,11 +1144,8 @@ href="https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.htm
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL SITE →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2171,22 +1153,14 @@ href="https://www.google.com/maps/search/?api=1&query=Bellagio+Fountains+Las+Veg
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-External destination.
-Verify current hours and conditions with Bellagio.
-
+External destination. Verify current hours and conditions with Bellagio.
 </div>
-
 
 </div>
 
@@ -2200,62 +1174,30 @@ class="offer"
 data-search="bellagio conservatory botanical gardens flowers attraction family"
 >
 
-<div class="offer-photo">
-
-🌺
-
-</div>
-
+<div class="offer-photo">🌺</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 PUBLIC ATTRACTION
-
 </span>
 
-
-<h3>
-
-Bellagio Conservatory
-
-</h3>
-
+<h3>Bellagio Conservatory</h3>
 
 <p>
-
 Seasonal botanical installations inside Bellagio.
 Displays and dark dates change throughout the year.
-
 </p>
 
-
 <div class="details">
-
-📍 Bellagio
-
-<br>
-
-🌺 Seasonal installations
-
-<br>
-
+📍 Bellagio<br>
+🌺 Seasonal installations<br>
 👤 0VEGAS account: Not required
-
 </div>
 
-
-<div class="price">
-
-$0*
-
-</div>
-
+<div class="price">$0*</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2263,11 +1205,8 @@ href="https://bellagio.mgmresorts.com/en/entertainment/conservatory-botanical-ga
 target="_blank"
 rel="noopener noreferrer"
 >
-
 CURRENT DISPLAY →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2275,22 +1214,14 @@ href="https://www.google.com/maps/search/?api=1&query=Bellagio+Conservatory+Las+
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-*Check Bellagio's current access information,
-dates and any special-experience restrictions.
-
+*Check Bellagio's current access information and dates.
 </div>
-
 
 </div>
 
@@ -2304,63 +1235,30 @@ class="offer"
 data-search="fremont street viva vision downtown free show concert entertainment"
 >
 
-<div class="offer-photo">
-
-✨
-
-</div>
-
+<div class="offer-photo">✨</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 $0 ENTERTAINMENT
-
 </span>
 
-
-<h3>
-
-Fremont Street Experience
-
-</h3>
-
+<h3>Fremont Street Experience</h3>
 
 <p>
-
-Explore downtown Las Vegas,
-Viva Vision and scheduled
-complimentary live entertainment.
-
+Explore downtown Las Vegas, Viva Vision
+and scheduled complimentary entertainment.
 </p>
 
-
 <div class="details">
-
-💰 Viva Vision: $0
-
-<br>
-
-📍 Downtown Las Vegas
-
-<br>
-
-🎵 Free entertainment varies by schedule
-
+💰 Viva Vision: $0<br>
+📍 Downtown Las Vegas<br>
+🎵 Entertainment varies by schedule
 </div>
 
-
-<div class="price">
-
-$0
-
-</div>
-
+<div class="price">$0</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2368,11 +1266,8 @@ href="https://fremontstreetexperience.com/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL SITE →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2380,22 +1275,14 @@ href="https://www.google.com/maps/search/?api=1&query=Fremont+Street+Experience+
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-Paid attractions and purchases are
-also offered at Fremont Street.
-
+Paid attractions and purchases are also available.
 </div>
-
 
 </div>
 
@@ -2409,63 +1296,30 @@ class="offer"
 data-search="flamingo wildlife habitat birds flamingos family free"
 >
 
-<div class="offer-photo">
-
-🦩
-
-</div>
-
+<div class="offer-photo">🦩</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 $0 ATTRACTION
-
 </span>
 
-
-<h3>
-
-Flamingo Wildlife Habitat
-
-</h3>
-
+<h3>Flamingo Wildlife Habitat</h3>
 
 <p>
-
-See flamingos, tropical birds,
-waterfalls and other wildlife
-at the Flamingo's outdoor habitat.
-
+See flamingos, tropical birds, waterfalls
+and other wildlife at the Flamingo.
 </p>
 
-
 <div class="details">
-
-💰 Admission: Complimentary
-
-<br>
-
-📍 Flamingo Las Vegas
-
-<br>
-
+💰 Admission: Complimentary<br>
+📍 Flamingo Las Vegas<br>
 👨‍👩‍👧 Family attraction
-
 </div>
 
-
-<div class="price">
-
-$0
-
-</div>
-
+<div class="price">$0</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2473,11 +1327,8 @@ href="https://www.caesars.com/flamingo-las-vegas/things-to-do/wildlife-habitat"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL SITE →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2485,91 +1336,51 @@ href="https://www.google.com/maps/search/?api=1&query=Flamingo+Wildlife+Habitat+
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-Verify current operating hours
-with the property before visiting.
-
+Verify current operating hours before visiting.
 </div>
-
 
 </div>
 
 </article>
 
 
-<!-- WELCOME SIGN -->
+<!-- SIGN -->
 
 <article
 class="offer"
 data-search="welcome fabulous las vegas sign photo landmark free"
 >
 
-<div class="offer-photo">
-
-📸
-
-</div>
-
+<div class="offer-photo">📸</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 $0 PHOTO SPOT
-
 </span>
 
-
-<h3>
-
-Welcome to Fabulous Las Vegas Sign
-
-</h3>
-
+<h3>Welcome to Fabulous Las Vegas Sign</h3>
 
 <p>
-
-Take your own picture at one
-of Las Vegas' most recognizable landmarks.
-
+Take your own picture at one of
+Las Vegas' most recognizable landmarks.
 </p>
 
-
 <div class="details">
-
-📸 Take your own photo: $0
-
-<br>
-
-📍 Las Vegas Boulevard South
-
-<br>
-
+📸 Take your own photo: $0<br>
+📍 Las Vegas Boulevard South<br>
 👤 No 0VEGAS registration
-
 </div>
 
-
-<div class="price">
-
-$0
-
-</div>
-
+<div class="price">$0</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2577,11 +1388,8 @@ href="https://www.clarkcountynv.gov/government/departments/parks___recreation/cu
 target="_blank"
 rel="noopener noreferrer"
 >
-
 LEARN MORE →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2589,22 +1397,14 @@ href="https://www.google.com/maps/search/?api=1&query=Welcome+to+Fabulous+Las+Ve
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-Third-party photographers may separately
-offer paid photography services.
-
+Third-party photographers may separately offer paid services.
 </div>
-
 
 </div>
 
@@ -2618,65 +1418,30 @@ class="offer"
 data-search="wynn lake dreams free show terrace entertainment"
 >
 
-<div class="offer-photo">
-
-🌙
-
-</div>
-
+<div class="offer-photo">🌙</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 COMPLIMENTARY VIEWING
-
 </span>
 
-
-<h3>
-
-Wynn Lake of Dreams
-
-</h3>
-
+<h3>Wynn Lake of Dreams</h3>
 
 <p>
-
-A multimedia water,
-light and imagery production.
-
-Complimentary viewing opportunities
-may be available.
-
+A multimedia water, light and imagery production.
+Check Wynn for current complimentary viewing information.
 </p>
 
-
 <div class="details">
-
-🎭 Multimedia show
-
-<br>
-
-📍 Wynn Las Vegas
-
-<br>
-
+🎭 Multimedia show<br>
+📍 Wynn Las Vegas<br>
 👀 Check current viewing information
-
 </div>
 
-
-<div class="price">
-
-$0*
-
-</div>
-
+<div class="price">$0*</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2684,11 +1449,8 @@ href="https://www.wynnlasvegas.com/entertainment/lake-of-dreams"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL SITE →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2696,22 +1458,14 @@ href="https://www.google.com/maps/search/?api=1&query=Wynn+Lake+of+Dreams+Las+Ve
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-*Dining and drinks at surrounding
-venues are separate paid purchases.
-
+*Dining and drinks at surrounding venues are separate purchases.
 </div>
-
 
 </div>
 
@@ -2725,63 +1479,30 @@ class="offer"
 data-search="downtown container park family playground fremont"
 >
 
-<div class="offer-photo">
-
-🛝
-
-</div>
-
+<div class="offer-photo">🛝</div>
 
 <div class="offer-body">
 
-
 <span class="badge conditional">
-
 FREE ENTRY / PURCHASES EXTRA
-
 </span>
 
-
-<h3>
-
-Downtown Container Park
-
-</h3>
-
+<h3>Downtown Container Park</h3>
 
 <p>
-
-Open-air downtown destination
-featuring shops, restaurants
-and family attractions.
-
+Open-air downtown destination featuring
+shops, restaurants and family attractions.
 </p>
 
-
 <div class="details">
-
-📍 707 Fremont Street
-
-<br>
-
-🛝 Family attractions
-
-<br>
-
+📍 707 Fremont Street<br>
+🛝 Family attractions<br>
 🚗 Parking nearby may not be free
-
 </div>
 
-
-<div class="price">
-
-$0*
-
-</div>
-
+<div class="price">$0*</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2789,11 +1510,8 @@ href="https://downtowncontainerpark.com/visit/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL SITE →
-
 </a>
-
 
 <a
 class="btn btn-map"
@@ -2801,23 +1519,14 @@ href="https://www.google.com/maps/search/?api=1&query=Downtown+Container+Park+La
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-*Food, shopping, parking and other
-purchases cost extra.
-Check current park rules.
-
+*Food, shopping, parking and other purchases cost extra.
 </div>
-
 
 </div>
 
@@ -2831,63 +1540,30 @@ class="offer"
 data-search="las vegas strip walk sightseeing neon free photo"
 >
 
-<div class="offer-photo">
-
-🌃
-
-</div>
-
+<div class="offer-photo">🌃</div>
 
 <div class="offer-body">
 
-
 <span class="badge free">
-
 $0 PUBLIC EXPERIENCE
-
 </span>
 
-
-<h3>
-
-Walk the Las Vegas Strip
-
-</h3>
-
+<h3>Walk the Las Vegas Strip</h3>
 
 <p>
-
-Experience Vegas architecture,
-neon, public views and
-people-watching on foot.
-
+Experience Vegas architecture, neon,
+public views and people-watching on foot.
 </p>
 
-
 <div class="details">
-
-🚶 Walking: $0
-
-<br>
-
-📸 Public sightseeing
-
-<br>
-
+🚶 Walking: $0<br>
+📸 Public sightseeing<br>
 ☀️ Consider weather conditions
-
 </div>
 
-
-<div class="price">
-
-$0
-
-</div>
-
+<div class="price">$0</div>
 
 <div class="buttons">
-
 
 <a
 class="btn btn-main"
@@ -2895,28 +1571,18 @@ href="https://www.google.com/maps/search/?api=1&query=Las+Vegas+Strip"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OPEN MAP →
-
 </a>
 
-
 </div>
-
 
 <div class="third-party">
-
-Transportation, parking,
-attractions, food and purchases
-along the Strip may cost extra.
-
+Transportation, parking, attractions, food and purchases may cost extra.
 </div>
-
 
 </div>
 
 </article>
-
 
 </div>
 
@@ -2925,87 +1591,52 @@ along the Strip may cost extra.
 </section>
 
 
-<!-- ====================================================
-     PARKING
-==================================================== -->
+<!-- PARKING -->
 
 <section id="parking">
 
 <div class="container">
 
-
 <div class="heading">
 
 <div class="eyebrow">
-
 🚗 $0 PARKING
-
 </div>
 
 <h2>
-
 Free Parking Opportunities
-
 </h2>
 
 <p>
-
 Parking policies change frequently.
-Every button sends you to current
-property information.
-
-Always read the eligibility conditions.
-
+Always verify current eligibility and conditions with the property.
 </p>
 
 </div>
 
-
 <div class="grid">
-
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🚗
-
-</div>
+<div class="offer-photo">🚗</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 CHECK CURRENT POLICY
-
 </span>
 
-<h3>
-
-Treasure Island
-
-</h3>
+<h3>Treasure Island</h3>
 
 <p>
-
-Check Treasure Island's current
-guest services information for
-complimentary parking eligibility.
-
+Check Treasure Island's current guest-services
+information for complimentary parking eligibility.
 </p>
 
 <div class="details">
-
-🚗 Parking information
-
-<br>
-
-⚠️ Conditions may apply
-
-<br>
-
+🚗 Parking information<br>
+⚠️ Conditions may apply<br>
 🔄 Verify before arrival
-
 </div>
 
 <div class="buttons">
@@ -3016,9 +1647,7 @@ href="https://treasureisland.com/amenities/guest-services"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 CHECK PARKING →
-
 </a>
 
 <a
@@ -3027,9 +1656,7 @@ href="https://www.google.com/maps/search/?api=1&query=Treasure+Island+Las+Vegas"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
 </div>
@@ -3041,46 +1668,25 @@ DIRECTIONS
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🅿️
-
-</div>
+<div class="offer-photo">🅿️</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 CHECK CURRENT POLICY
-
 </span>
 
-<h3>
-
-SAHARA Las Vegas
-
-</h3>
+<h3>SAHARA Las Vegas</h3>
 
 <p>
-
-Check SAHARA's current guest
-services information for parking
-terms and eligibility.
-
+Check SAHARA's current guest-services information
+for parking terms and eligibility.
 </p>
 
 <div class="details">
-
-🚗 Parking information
-
-<br>
-
-🔑 Conditions may apply
-
-<br>
-
+🚗 Parking information<br>
+🔑 Conditions may apply<br>
 🔄 Verify current policy
-
 </div>
 
 <div class="buttons">
@@ -3091,9 +1697,7 @@ href="https://www.saharalasvegas.com/guest-services"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 CHECK PARKING →
-
 </a>
 
 <a
@@ -3102,9 +1706,7 @@ href="https://www.google.com/maps/search/?api=1&query=SAHARA+Las+Vegas"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
 </div>
@@ -3116,46 +1718,25 @@ DIRECTIONS
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🔎
-
-</div>
+<div class="offer-photo">🔎</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 CHECK BEFORE PARKING
-
 </span>
 
-<h3>
-
-Find More $0 Parking
-
-</h3>
+<h3>Find More $0 Parking</h3>
 
 <p>
-
-Parking policies can change by
-property, event, loyalty tier,
-Nevada residency and length of stay.
-
+Parking policies can change by property,
+event, loyalty tier, residency and length of stay.
 </p>
 
 <div class="details">
-
-✓ Check official property terms
-
-<br>
-
-✓ Check time limits
-
-<br>
-
+✓ Check official property terms<br>
+✓ Check time limits<br>
 ✓ Check validation requirements
-
 </div>
 
 <div class="buttons">
@@ -3166,9 +1747,7 @@ href="https://www.visitlasvegas.com/experience/post/budget-hacks-for-scoring-the
 target="_blank"
 rel="noopener noreferrer"
 >
-
 EXPLORE VEGAS DEALS →
-
 </a>
 
 </div>
@@ -3180,54 +1759,31 @@ EXPLORE VEGAS DEALS →
 
 <article class="offer">
 
-<div class="offer-photo">
-
-⚠️
-
-</div>
+<div class="offer-photo">⚠️</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 0VEGAS RULE
-
 </span>
 
-<h3>
-
-No Surprise Parking Claims
-
-</h3>
+<h3>No Surprise Parking Claims</h3>
 
 <p>
-
-0VEGAS distinguishes unrestricted
-$0 parking from guest, local,
-validation and promotional parking.
-
+0VEGAS distinguishes unrestricted $0 parking
+from guest, local, validation and promotional parking.
 </p>
 
 <div class="details">
-
-$0 does not automatically mean unrestricted.
-
-<br>
-
+$0 does not automatically mean unrestricted.<br>
 Always read current property terms.
-
 </div>
 
-<div class="price">
-
-VERIFY
-
-</div>
+<div class="price">VERIFY</div>
 
 </div>
 
 </article>
-
 
 </div>
 
@@ -3236,69 +1792,41 @@ VERIFY
 </section>
 
 
-<!-- ====================================================
-     EVENTS
-==================================================== -->
+<!-- EVENTS -->
 
 <section id="events">
 
 <div class="container">
 
-
 <div class="heading">
 
 <div class="eyebrow">
-
 🎉 CURRENT EVENTS
-
 </div>
 
-<h2>
-
-Find Free Vegas Events
-
-</h2>
+<h2>Find Free Vegas Events</h2>
 
 <p>
-
-Go directly to official public
-event sources for current information.
-
+Go directly to current official event sources.
 </p>
 
 </div>
-
 
 <div class="grid">
 
-
 <article class="offer">
 
-<div class="offer-photo">
-
-🎵
-
-</div>
+<div class="offer-photo">🎵</div>
 
 <div class="offer-body">
 
-<span class="badge free">
+<span class="badge free">CITY EVENTS</span>
 
-CITY EVENTS
-
-</span>
-
-<h3>
-
-City of Las Vegas Events
-
-</h3>
+<h3>City of Las Vegas Events</h3>
 
 <p>
-
-Find concerts, festivals,
-cultural events and community activities.
-
+Find concerts, festivals, cultural events
+and community activities.
 </p>
 
 <div class="buttons">
@@ -3309,9 +1837,7 @@ href="https://www.lasvegasnevada.gov/Residents/Events"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 CURRENT EVENTS →
-
 </a>
 
 </div>
@@ -3323,32 +1849,17 @@ CURRENT EVENTS →
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🎸
-
-</div>
+<div class="offer-photo">🎸</div>
 
 <div class="offer-body">
 
-<span class="badge free">
+<span class="badge free">FREE EVENTS</span>
 
-FREE EVENTS
-
-</span>
-
-<h3>
-
-Free City Entertainment
-
-</h3>
+<h3>Free City Entertainment</h3>
 
 <p>
-
-Check current official City of Las Vegas
-information for complimentary concerts
-and public entertainment.
-
+Check current City of Las Vegas information
+for complimentary public entertainment.
 </p>
 
 <div class="buttons">
@@ -3359,9 +1870,7 @@ href="https://www.lasvegasnevada.gov/Residents/Events"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 VIEW EVENTS →
-
 </a>
 
 </div>
@@ -3373,32 +1882,17 @@ VIEW EVENTS →
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🎨
-
-</div>
+<div class="offer-photo">🎨</div>
 
 <div class="offer-body">
 
-<span class="badge free">
+<span class="badge free">FESTIVALS</span>
 
-FESTIVALS
-
-</span>
-
-<h3>
-
-Las Vegas Festivals
-
-</h3>
+<h3>Las Vegas Festivals</h3>
 
 <p>
-
-Explore city festivals,
-including events that may be
-free and open to the public.
-
+Explore city festivals, including events
+that may be free and open to the public.
 </p>
 
 <div class="buttons">
@@ -3409,9 +1903,7 @@ href="https://www.lasvegasnevada.gov/Residents/Arts-Culture/Annual-Festivals"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 EXPLORE FESTIVALS →
-
 </a>
 
 </div>
@@ -3423,32 +1915,17 @@ EXPLORE FESTIVALS →
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🌆
-
-</div>
+<div class="offer-photo">🌆</div>
 
 <div class="offer-body">
 
-<span class="badge free">
+<span class="badge free">DOWNTOWN</span>
 
-DOWNTOWN
-
-</span>
-
-<h3>
-
-Fremont Entertainment
-
-</h3>
+<h3>Fremont Entertainment</h3>
 
 <p>
-
-Check the official Fremont Street
-calendar for current entertainment
-and concerts.
-
+Check Fremont Street for current entertainment
+and concert information.
 </p>
 
 <div class="buttons">
@@ -3459,9 +1936,7 @@ href="https://fremontstreetexperience.com/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 WHAT'S ON →
-
 </a>
 
 </div>
@@ -3470,7 +1945,6 @@ WHAT'S ON →
 
 </article>
 
-
 </div>
 
 </div>
@@ -3478,91 +1952,54 @@ WHAT'S ON →
 </section>
 
 
-<!-- ====================================================
-     CASINO
-==================================================== -->
+<!-- CASINO PROMOTIONS -->
 
 <section id="casino">
 
 <div class="container">
 
-
 <div class="heading">
 
 <div class="eyebrow">
-
 🎰 21+ CASINO PROMOTIONS
-
 </div>
 
 <h2>
-
 Free Play — Conditions Up Front
-
 </h2>
 
 <p>
-
 You do not need a 0VEGAS account.
-
-Casino programs may require their own
-membership, qualifying activity and
-age verification.
-
+Casino programs may require their own membership,
+qualifying activity and age verification.
 </p>
 
 </div>
 
-
 <div class="grid">
-
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🎰
-
-</div>
+<div class="offer-photo">🎰</div>
 
 <div class="offer-body">
 
 <span class="badge membership">
-
 21+ • MEMBERSHIP REQUIRED
-
 </span>
 
-<h3>
-
-MGM Rewards FREEPLAY
-
-</h3>
+<h3>MGM Rewards FREEPLAY</h3>
 
 <p>
-
-Review MGM's official information
-for current FREEPLAY eligibility,
-restrictions and participating destinations.
-
+Review MGM's official information for current
+FREEPLAY eligibility, restrictions and participating destinations.
 </p>
 
 <div class="details">
-
-🔞 21+
-
-<br>
-
-💳 MGM Rewards membership may be required
-
-<br>
-
-⚠️ Eligibility/restrictions apply
-
-<br>
-
+🔞 21+<br>
+💳 MGM Rewards requirements apply<br>
+⚠️ Eligibility/restrictions apply<br>
 💵 Promotional credits are not necessarily cash
-
 </div>
 
 <div class="buttons">
@@ -3573,18 +2010,13 @@ href="https://www.mgmresorts.com/en/mgm-rewards/what-is-freeplay.html"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL TERMS →
-
 </a>
 
 </div>
 
 <div class="third-party">
-
-0VEGAS does not issue,
-guarantee or control MGM FREEPLAY.
-
+0VEGAS does not issue, guarantee or control MGM FREEPLAY.
 </div>
 
 </div>
@@ -3594,55 +2026,28 @@ guarantee or control MGM FREEPLAY.
 
 <article class="offer">
 
-<div class="offer-photo">
-
-💳
-
-</div>
+<div class="offer-photo">💳</div>
 
 <div class="offer-body">
 
 <span class="badge membership">
-
 PROVIDER REGISTRATION MAY APPLY
-
 </span>
 
-<h3>
-
-Players Clubs
-
-</h3>
+<h3>Players Clubs</h3>
 
 <p>
-
-Joining an outside casino loyalty
-program is different from registering
-with 0VEGAS.
-
-0VEGAS itself requires no account.
-
+Joining an outside casino loyalty program
+is different from registering with 0VEGAS.
 </p>
 
 <div class="details">
-
-0VEGAS registration: NONE
-
-<br>
-
-Casino membership: May be required
-
-<br>
-
+0VEGAS registration: NONE<br>
+Casino membership: May be required<br>
 Age/ID requirements: May apply
-
 </div>
 
-<div class="price">
-
-$0*
-
-</div>
+<div class="price">$0*</div>
 
 </div>
 
@@ -3651,49 +2056,27 @@ $0*
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🎁
-
-</div>
+<div class="offer-photo">🎁</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 PROMOTIONAL
-
 </span>
 
-<h3>
-
-Casino Offers
-
-</h3>
+<h3>Casino Offers</h3>
 
 <p>
-
 Promotional credits can be targeted,
-temporary, activity-based or subject
-to minimum requirements.
-
+temporary or subject to qualifying requirements.
 </p>
 
 <div class="details">
-
-Never assume "free play" equals cash.
-
-<br>
-
+Never assume "free play" equals cash.<br>
 Always read official casino terms.
-
 </div>
 
-<div class="price">
-
-CHECK
-
-</div>
+<div class="price">CHECK</div>
 
 </div>
 
@@ -3702,49 +2085,30 @@ CHECK
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🔞
-
-</div>
+<div class="offer-photo">🔞</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 RESPONSIBLE GAMING
-
 </span>
 
-<h3>
-
-Know the Rules
-
-</h3>
+<h3>Know the Rules</h3>
 
 <p>
-
 Casino gaming is restricted by age
 and applicable Nevada law.
-
 Promotions do not guarantee winnings.
-
 </p>
 
 <div class="details">
-
-21+ for casino gambling in Nevada.
-
-<br>
-
+21+ for casino gambling in Nevada.<br>
 Play responsibly.
-
 </div>
 
 </div>
 
 </article>
-
 
 </div>
 
@@ -3753,92 +2117,53 @@ Play responsibly.
 </section>
 
 
-<!-- ====================================================
-     OUTDOORS
-==================================================== -->
+<!-- OUTDOORS -->
 
 <section id="outdoors">
 
 <div class="container">
 
-
 <div class="heading">
 
 <div class="eyebrow">
-
 🥾 OUTSIDE VEGAS
-
 </div>
 
 <h2>
-
 Free Outdoors — Without Hiding the Fees
-
 </h2>
 
 <p>
-
-Some outdoor recreation is free
-while parking, reservations,
-campgrounds, Scenic Drive access
-or special uses may carry fees.
-
+Some outdoor recreation is free while parking,
+reservations, camping or certain access may carry fees.
 </p>
 
 </div>
 
-
 <div class="grid">
-
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🏜️
-
-</div>
+<div class="offer-photo">🏜️</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 FEES MAY APPLY
-
 </span>
 
-<h3>
-
-Red Rock Canyon
-
-</h3>
+<h3>Red Rock Canyon</h3>
 
 <p>
-
-World-class desert scenery,
-hiking and climbing near Las Vegas.
-
-Some areas and activities have
-entrance, reservation or other fees.
-
+Desert scenery, hiking and climbing near Las Vegas.
+Some areas and activities have access or other fees.
 </p>
 
 <div class="details">
-
-🥾 Hiking & climbing opportunities
-
-<br>
-
-🚗 Access rules vary
-
-<br>
-
-🏕️ Camping is not free
-
-<br>
-
+🥾 Hiking & climbing opportunities<br>
+🚗 Access rules vary<br>
+🏕️ Camping is not free<br>
 ⚠️ Check BLM before departure
-
 </div>
 
 <div class="buttons">
@@ -3849,9 +2174,7 @@ href="https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-c
 target="_blank"
 rel="noopener noreferrer"
 >
-
 OFFICIAL BLM INFO →
-
 </a>
 
 <a
@@ -3860,9 +2183,7 @@ href="https://www.google.com/maps/search/?api=1&query=Red+Rock+Canyon+National+C
 target="_blank"
 rel="noopener noreferrer"
 >
-
 DIRECTIONS
-
 </a>
 
 </div>
@@ -3874,32 +2195,19 @@ DIRECTIONS
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🥾
-
-</div>
+<div class="offer-photo">🥾</div>
 
 <div class="offer-body">
 
 <span class="badge free">
-
 SEARCH $0 OPTIONS
-
 </span>
 
-<h3>
-
-Hiking
-
-</h3>
+<h3>Hiking</h3>
 
 <p>
-
 Use official public-land information
-to identify trails and access conditions
-before setting out.
-
+to identify trails and access conditions.
 </p>
 
 <div class="buttons">
@@ -3910,9 +2218,7 @@ href="https://www.blm.gov/nevada"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 BLM NEVADA →
-
 </a>
 
 </div>
@@ -3924,32 +2230,17 @@ BLM NEVADA →
 
 <article class="offer">
 
-<div class="offer-photo">
-
-🌅
-
-</div>
+<div class="offer-photo">🌅</div>
 
 <div class="offer-body">
 
-<span class="badge free">
+<span class="badge free">$0 IDEA</span>
 
-$0 IDEA
-
-</span>
-
-<h3>
-
-Vegas Sunsets
-
-</h3>
+<h3>Vegas Sunsets</h3>
 
 <p>
-
 Desert and city viewpoints can provide
-spectacular free photography and
-sightseeing opportunities.
-
+spectacular free photography and sightseeing.
 </p>
 
 <div class="buttons">
@@ -3960,9 +2251,7 @@ href="https://www.google.com/maps/search/?api=1&query=Las+Vegas+scenic+viewpoint
 target="_blank"
 rel="noopener noreferrer"
 >
-
 FIND VIEWPOINTS →
-
 </a>
 
 </div>
@@ -3974,32 +2263,19 @@ FIND VIEWPOINTS →
 
 <article class="offer">
 
-<div class="offer-photo">
-
-☀️
-
-</div>
+<div class="offer-photo">☀️</div>
 
 <div class="offer-body">
 
 <span class="badge conditional">
-
 SAFETY FIRST
-
 </span>
 
-<h3>
-
-Check the Weather
-
-</h3>
+<h3>Check the Weather</h3>
 
 <p>
-
-Desert temperatures and weather conditions
-can change the safety of hiking,
-climbing and other outdoor plans.
-
+Desert temperatures and weather can affect
+hiking, climbing and outdoor plans.
 </p>
 
 <div class="buttons">
@@ -4010,9 +2286,7 @@ href="https://www.weather.gov/vef/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 NWS LAS VEGAS →
-
 </a>
 
 </div>
@@ -4021,7 +2295,6 @@ NWS LAS VEGAS →
 
 </article>
 
-
 </div>
 
 </div>
@@ -4029,64 +2302,39 @@ NWS LAS VEGAS →
 </section>
 
 
-<!-- ====================================================
-     LIVE VEGAS
-==================================================== -->
+<!-- LIVE VEGAS -->
 
-<section
-id="live"
-class="live"
->
+<section id="live" class="live">
 
 <div class="container">
-
 
 <div class="heading">
 
 <div class="eyebrow">
-
 LAS VEGAS LIVE
-
 </div>
 
 <h2>
-
 Vegas Right Now
-
 </h2>
 
 <p>
-
-Current Las Vegas time,
-weather and direct access
-to official changing conditions.
-
+Current Las Vegas time and weather,
+plus direct access to live road and event information.
 </p>
 
 </div>
-
 
 <div class="live-grid">
 
-
 <div class="live-box">
 
-<div class="live-icon">
+<div class="live-icon">🕐</div>
 
-🕐
-
-</div>
-
-<h3>
-
-Las Vegas Time
-
-</h3>
+<h3>Las Vegas Time</h3>
 
 <p id="liveSectionTime">
-
 Loading...
-
 </p>
 
 </div>
@@ -4095,35 +2343,15 @@ Loading...
 <div class="live-box">
 
 <div class="live-icon">
-
-<span id="liveWeatherIcon">
-
-☀️
-
-</span>
-
+<span id="liveWeatherIcon">☀️</span>
 </div>
 
-<h3>
-
-Weather
-
-</h3>
+<h3>Weather</h3>
 
 <p>
-
-<strong id="liveWeatherTemp">
-
---°F
-
-</strong>
-
-<span id="liveWeatherText">
-
-Loading...
-
-</span>
-
+<strong id="liveWeatherTemp">--°F</strong>
+<br>
+<span id="liveWeatherText">Loading...</span>
 </p>
 
 <a
@@ -4132,9 +2360,7 @@ href="https://www.weather.gov/vef/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 NWS LAS VEGAS →
-
 </a>
 
 </div>
@@ -4142,23 +2368,13 @@ NWS LAS VEGAS →
 
 <div class="live-box">
 
-<div class="live-icon">
+<div class="live-icon">🚦</div>
 
-🚦
-
-</div>
-
-<h3>
-
-Traffic
-
-</h3>
+<h3>Traffic</h3>
 
 <p>
-
 Current Nevada incidents,
 closures and road conditions.
-
 </p>
 
 <a
@@ -4167,9 +2383,7 @@ href="https://www.nvroads.com/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 LIVE TRAFFIC →
-
 </a>
 
 </div>
@@ -4177,23 +2391,13 @@ LIVE TRAFFIC →
 
 <div class="live-box">
 
-<div class="live-icon">
+<div class="live-icon">🎉</div>
 
-🎉
-
-</div>
-
-<h3>
-
-Events
-
-</h3>
+<h3>Events</h3>
 
 <p>
-
 See current City of Las Vegas
 activities and events.
-
 </p>
 
 <a
@@ -4202,13 +2406,10 @@ href="https://www.lasvegasnevada.gov/Residents/Events"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 CURRENT EVENTS →
-
 </a>
 
 </div>
-
 
 </div>
 
@@ -4217,9 +2418,7 @@ CURRENT EVENTS →
 </section>
 
 
-<!-- ====================================================
-     PROMISE
-==================================================== -->
+<!-- PROMISE -->
 
 <section>
 
@@ -4228,52 +2427,22 @@ CURRENT EVENTS →
 <div class="promise">
 
 <h2>
-
-SEE IT.
-
-<strong>
-
-CLICK IT.
-
-</strong>
-
-GO.
-
+SEE IT. <strong>CLICK IT.</strong> GO.
 </h2>
 
 <p>
-
-No 0VEGAS membership.
-No 0VEGAS login.
-No email wall.
-
-No account required
-to use the directory.
-
+No 0VEGAS membership. No 0VEGAS login.
+No email wall. No account required to use the directory.
 </p>
 
 <p>
-
-When an outside provider requires
-its own membership,
-reservation, registration
-or eligibility requirement,
-
-<strong>
-
-we tell you before you click.
-
-</strong>
-
+When an outside provider requires its own membership,
+reservation, registration or eligibility requirement,
+<strong>we tell you before you click.</strong>
 </p>
 
-<a
-href="#free"
-class="btn btn-main"
->
-
+<a href="#free" class="btn btn-main">
 START FINDING $0 →
-
 </a>
 
 </div>
@@ -4283,297 +2452,130 @@ START FINDING $0 →
 </section>
 
 
-<!-- ====================================================
-     LEGAL
-==================================================== -->
+<!-- LEGAL -->
 
-<section
-id="legal"
-class="legal"
->
+<section id="legal" class="legal">
 
 <div class="container">
 
 <div class="legal-box">
 
-
 <h3>
-
 0VEGAS.com Important Disclosures
-
 </h3>
 
-
 <p>
-
-0VEGAS.com is an independent informational
-directory designed to help users discover
-attractions, events, promotions,
-parking opportunities, activities and
-other offerings in the Las Vegas area.
-
+0VEGAS.com is an independent informational directory
+designed to help users discover attractions, events,
+promotions, parking opportunities, activities and other
+offerings in the Las Vegas area.
 </p>
-
 
 <ul>
 
-
 <li>
-
-<strong>
-Offers change.
-</strong>
-
-Prices, schedules, promotions,
-parking policies, admission policies,
-hours, availability and eligibility
-requirements can change at any time
-without notice.
-
-Always confirm current information
-with the applicable provider before
-relying on a listing.
-
+<strong>Offers change.</strong>
+Prices, schedules, promotions, parking policies,
+admission policies, hours, availability and eligibility
+requirements can change without notice. Confirm current
+information with the applicable provider.
 </li>
 
-
 <li>
-
-<strong>
-“Free” may have conditions.
-</strong>
-
-Some offerings may require hotel
-or property guest status,
-loyalty-program membership,
-Nevada residency,
-age verification,
-identification,
-validation,
-a qualifying purchase,
-qualifying play,
-reservations
-or other conditions.
-
+<strong>“Free” may have conditions.</strong>
+Some offerings may require guest status, loyalty-program
+membership, residency, age verification, identification,
+validation, qualifying purchases, qualifying play,
+reservations or other conditions.
 </li>
 
-
 <li>
-
-<strong>
-No 0VEGAS registration required.
-</strong>
-
-0VEGAS.com does not require an account
-or email registration to browse this
-directory or follow its ordinary
-outbound links.
-
-Third-party providers may impose
-their own registration,
-membership or reservation requirements.
-
+<strong>No 0VEGAS registration required.</strong>
+0VEGAS.com does not require an account or email registration
+to browse the directory or follow ordinary outbound links.
+Third-party providers may have their own requirements.
 </li>
 
-
 <li>
-
-<strong>
-Third-party links.
-</strong>
-
-Links on this website may lead to
-independently operated third-party websites.
-
-0VEGAS.com does not control their
-availability, security,
-privacy practices,
-content, offers or terms.
-
+<strong>Third-party links.</strong>
+Links may lead to independently operated third-party websites.
+0VEGAS.com does not control their availability, security,
+privacy practices, content, offers or terms.
 </li>
 
-
 <li>
-
-<strong>
-No affiliation implied.
-</strong>
-
-Unless expressly stated otherwise,
-0VEGAS.com is not affiliated with,
-endorsed by, sponsored by or an
-official representative of the hotels,
-casinos, attractions,
-government agencies,
-venues, brands or businesses
-listed on this website.
-
+<strong>No affiliation implied.</strong>
+Unless expressly stated otherwise, 0VEGAS.com is not
+affiliated with, endorsed by, sponsored by or an official
+representative of listed hotels, casinos, attractions,
+government agencies, venues, brands or businesses.
 </li>
 
-
 <li>
-
-<strong>
-Trademarks.
-</strong>
-
-Company names,
-attraction names,
-casino names,
-hotel names,
-logos and other marks belong
-to their respective owners.
-
-Their identification is for
-informational and directory purposes.
-
+<strong>Trademarks.</strong>
+Company, attraction, casino and hotel names, logos and
+other marks belong to their respective owners and are
+identified for informational and directory purposes.
 </li>
 
-
 <li>
-
-<strong>
-Parking.
-</strong>
-
-Complimentary parking may be restricted
-by property,
-guest status,
-loyalty tier,
-Nevada residency,
-event,
-vehicle type,
-duration,
-validation or other conditions.
-
-Confirm the current parking policy
-before entering a garage or lot.
-
+<strong>Parking.</strong>
+Complimentary parking may be restricted by property,
+guest status, loyalty tier, residency, event, vehicle type,
+duration, validation or other conditions.
 </li>
 
-
 <li>
-
-<strong>
-Weather and traffic.
-</strong>
-
-Weather, road, traffic and travel
-information may change rapidly.
-
-Weather information displayed by
-0VEGAS is informational only.
-
-Check official weather,
-road and emergency sources
-when conditions may affect safety.
-
+<strong>Weather and traffic.</strong>
+Weather, traffic and road information may change rapidly.
+Check official weather, roadway and emergency sources when
+conditions may affect safety.
 </li>
 
-
 <li>
-
-<strong>
-Outdoor activities.
-</strong>
-
-Outdoor recreation involves inherent risks.
-
-Conditions,
-temperatures,
-closures,
-permits,
-entrance charges,
-reservations and access requirements
-may change.
-
-Visitors are responsible for checking
-official land-management information
-and determining whether an activity
-is appropriate for them.
-
+<strong>Outdoor activities.</strong>
+Outdoor recreation involves inherent risks. Conditions,
+temperatures, closures, permits, fees, reservations and
+access requirements may change.
 </li>
 
-
 <li>
-
-<strong>
-Advertising and affiliate disclosure.
-</strong>
-
-If 0VEGAS.com receives compensation,
-commissions,
-referral fees,
-sponsorship
-or other consideration in connection
-with a listing or link,
-the applicable commercial relationship
-should be clearly disclosed as required.
-
+<strong>Advertising and affiliate disclosure.</strong>
+If 0VEGAS.com receives compensation, commissions,
+referral fees, sponsorship or other consideration,
+applicable commercial relationships should be clearly disclosed.
 </li>
 
-
 <li>
-
-<strong>
-No guarantee.
-</strong>
-
-0VEGAS.com does not warrant that any
-listing,
-promotion,
-event,
-attraction,
-parking opportunity
-or offer will be available,
-suitable or free when a visitor arrives.
-
+<strong>No guarantee.</strong>
+0VEGAS.com does not guarantee that any listing, promotion,
+event, attraction, parking opportunity or offer will be
+available, suitable or free when a visitor arrives.
 </li>
-
 
 </ul>
 
 
 <div class="gambling">
 
-<strong>
+<strong>21+ GAMBLING NOTICE:</strong>
 
-21+ GAMBLING NOTICE:
-
-</strong>
-
-Casino gambling in Nevada is limited
-to persons 21 years of age or older.
-
-Promotional casino credits or “free play”
-are not necessarily cash,
-do not guarantee winnings
-and may be subject to membership,
-wagering,
-expiration,
+Casino gambling in Nevada is limited to persons 21 years
+of age or older. Promotional casino credits or “free play”
+are not necessarily cash, do not guarantee winnings and
+may be subject to membership, wagering, expiration,
 eligibility and redemption restrictions.
 
-Always review the casino's official
-promotion terms before participating.
+Always review the casino's official terms before participating.
 
 </div>
 
-
 <p>
-
-This general website disclosure is provided
-for informational purposes and is not legal advice.
-
-Before commercial launch,
-0VEGAS.com should have its Terms of Use,
-Privacy Policy,
-advertising disclosures
-and gaming-related language reviewed
-for its specific business model
-and applicable laws.
-
+This general website disclosure is informational and is not legal advice.
+Before commercial launch, the site's Terms of Use, Privacy Policy,
+advertising disclosures and gaming-related language should be reviewed
+for the site's specific business model and applicable laws.
 </p>
-
 
 </div>
 
@@ -4582,9 +2584,7 @@ and applicable laws.
 </section>
 
 
-<!-- ====================================================
-     FOOTER
-==================================================== -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -4592,40 +2592,29 @@ and applicable laws.
 
 <div class="footer-grid">
 
-
 <div>
 
 <div class="footer-logo">
-
 <span>0</span>VEGAS.com
-
 </div>
 
 <p>
-
 Everything Free in Las Vegas.
-
 </p>
 
 <p>
-
 Before you pay for anything in Vegas,
 check 0VEGAS.
-
 </p>
 
 <p>
-
 <a
 href="https://open-meteo.com/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
-Weather data by Open-Meteo.com
-
+Weather data by Open-Meteo
 </a>
-
 </p>
 
 </div>
@@ -4633,51 +2622,27 @@ Weather data by Open-Meteo.com
 
 <div>
 
-<h4>
+<h4>Find $0</h4>
 
-Find $0
-
-</h4>
-
-<a href="#free">
-Attractions
-</a>
-
-<a href="#parking">
-Parking
-</a>
-
-<a href="#events">
-Events
-</a>
-
-<a href="#casino">
-Casino Promotions
-</a>
-
-<a href="#outdoors">
-Outdoors
-</a>
+<a href="#free">Attractions</a>
+<a href="#parking">Parking</a>
+<a href="#events">Events</a>
+<a href="#casino">Casino Promotions</a>
+<a href="#outdoors">Outdoors</a>
 
 </div>
 
 
 <div>
 
-<h4>
-
-Vegas Live
-
-</h4>
+<h4>Vegas Live</h4>
 
 <a
 href="https://www.weather.gov/vef/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 Weather
-
 </a>
 
 <a
@@ -4685,9 +2650,7 @@ href="https://www.nvroads.com/"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 Traffic
-
 </a>
 
 <a
@@ -4695,9 +2658,7 @@ href="https://www.lasvegasnevada.gov/Residents/Events"
 target="_blank"
 rel="noopener noreferrer"
 >
-
 Events
-
 </a>
 
 </div>
@@ -4705,47 +2666,25 @@ Events
 
 <div>
 
-<h4>
+<h4>0VEGAS</h4>
 
-0VEGAS
-
-</h4>
-
-<a href="#legal">
-Disclosures
-</a>
-
-<a href="#legal">
-Third-Party Notice
-</a>
-
-<a href="#legal">
-Gaming Notice
-</a>
-
-<a href="#legal">
-Affiliate Disclosure
-</a>
+<a href="#legal">Disclosures</a>
+<a href="#legal">Third-Party Notice</a>
+<a href="#legal">Gaming Notice</a>
+<a href="#legal">Affiliate Disclosure</a>
 
 </div>
-
 
 </div>
 
 
 <div class="copyright">
 
-©
-<span id="year">
-</span>
-
-0VEGAS.com —
-Everything Free in Las Vegas.
-
+© <span id="year"></span>
+0VEGAS.com — Everything Free in Las Vegas.
 All rights reserved.
 
 </div>
-
 
 </div>
 
@@ -4755,17 +2694,15 @@ All rights reserved.
 <script>
 
 /* ======================================================
-   CURRENT YEAR
+   YEAR
 ====================================================== */
 
-document
-.getElementById("year")
-.textContent =
+document.getElementById("year").textContent =
 new Date().getFullYear();
 
 
 /* ======================================================
-   SECTION NAVIGATION
+   NAVIGATION
 ====================================================== */
 
 function go(id){
@@ -4776,11 +2713,8 @@ function go(id){
   if(target){
 
     target.scrollIntoView({
-
       behavior:"smooth",
-
       block:"start"
-
     });
 
   }
@@ -4790,265 +2724,146 @@ function go(id){
 
 /* ======================================================
    LIVE LAS VEGAS CLOCK
-
-   Las Vegas uses the America/Los_Angeles
-   time zone.
-
-   Intl automatically handles PST/PDT
-   daylight-saving changes.
 ====================================================== */
 
 function updateVegasTime(){
 
-  const now =
-    new Date();
+  const now = new Date();
 
   const time =
     new Intl.DateTimeFormat(
-
       "en-US",
-
       {
-
-        timeZone:
-          "America/Los_Angeles",
-
-        hour:
-          "numeric",
-
-        minute:
-          "2-digit",
-
-        second:
-          "2-digit",
-
-        hour12:
-          true
-
+        timeZone:"America/Los_Angeles",
+        hour:"numeric",
+        minute:"2-digit",
+        second:"2-digit",
+        hour12:true
       }
-
     ).format(now);
-
 
   const date =
     new Intl.DateTimeFormat(
-
       "en-US",
-
       {
-
-        timeZone:
-          "America/Los_Angeles",
-
-        weekday:
-          "short",
-
-        month:
-          "short",
-
-        day:
-          "numeric"
-
+        timeZone:"America/Los_Angeles",
+        weekday:"short",
+        month:"short",
+        day:"numeric"
       }
-
     ).format(now);
 
-
   const topClock =
-    document.getElementById(
-      "vegasTime"
-    );
-
+    document.getElementById("vegasTime");
 
   const sectionClock =
-    document.getElementById(
-      "liveSectionTime"
-    );
-
+    document.getElementById("liveSectionTime");
 
   if(topClock){
-
-    topClock.textContent =
-      time;
-
+    topClock.textContent = time;
   }
 
-
   if(sectionClock){
-
     sectionClock.textContent =
-      date +
-      " • " +
-      time;
-
+      date + " • " + time;
   }
 
 }
 
-
-/* Run immediately */
-
 updateVegasTime();
 
-
-/* Update every second */
-
 setInterval(
-
   updateVegasTime,
-
   1000
-
 );
 
 
 /* ======================================================
    LIVE LAS VEGAS WEATHER
-
-   Prototype weather source:
-   Open-Meteo
-
-   Approximate central Las Vegas coordinates:
-   36.1716, -115.1391
-
-   Refresh:
-   every 10 minutes
 ====================================================== */
 
 async function updateVegasWeather(){
 
   const topTemp =
-    document.getElementById(
-      "vegasTemp"
-    );
+    document.getElementById("vegasTemp");
 
   const topText =
-    document.getElementById(
-      "vegasWeather"
-    );
+    document.getElementById("vegasWeather");
 
   const topIcon =
-    document.getElementById(
-      "weatherIcon"
-    );
+    document.getElementById("weatherIcon");
 
   const sectionTemp =
-    document.getElementById(
-      "liveWeatherTemp"
-    );
+    document.getElementById("liveWeatherTemp");
 
   const sectionText =
-    document.getElementById(
-      "liveWeatherText"
-    );
+    document.getElementById("liveWeatherText");
 
   const sectionIcon =
-    document.getElementById(
-      "liveWeatherIcon"
-    );
-
+    document.getElementById("liveWeatherIcon");
 
   try{
 
-
     const url =
-
       "https://api.open-meteo.com/v1/forecast" +
-
       "?latitude=36.1716" +
-
       "&longitude=-115.1391" +
-
       "&current=" +
-
       "temperature_2m," +
-
       "apparent_temperature," +
-
       "weather_code," +
-
       "wind_speed_10m" +
-
       "&temperature_unit=fahrenheit" +
-
       "&wind_speed_unit=mph" +
-
       "&timezone=America%2FLos_Angeles";
-
 
     const response =
       await fetch(url);
 
-
     if(!response.ok){
-
-      throw new Error(
-        "Weather service unavailable"
-      );
-
+      throw new Error("Weather unavailable");
     }
-
 
     const data =
       await response.json();
 
-
     const current =
       data.current;
-
 
     const weather =
       decodeWeather(
         current.weather_code
       );
 
-
     const temperature =
       Math.round(
         current.temperature_2m
       ) + "°F";
 
-
-    const weatherText =
-      weather.text;
-
-
     if(topTemp){
-
       topTemp.textContent =
         temperature;
-
     }
-
 
     if(topText){
-
       topText.textContent =
-        weatherText;
-
+        weather.text;
     }
-
 
     if(topIcon){
-
       topIcon.textContent =
         weather.icon;
-
     }
-
 
     if(sectionTemp){
-
       sectionTemp.textContent =
         temperature;
-
     }
-
 
     if(sectionText){
 
       sectionText.textContent =
-        weatherText +
+        weather.text +
         " • FEELS " +
         Math.round(
           current.apparent_temperature
@@ -5061,241 +2876,127 @@ async function updateVegasWeather(){
 
     }
 
-
     if(sectionIcon){
-
       sectionIcon.textContent =
         weather.icon;
-
     }
-
 
   }catch(error){
 
-
     if(topTemp){
-
-      topTemp.textContent =
-        "LIVE";
-
+      topTemp.textContent = "LIVE";
     }
-
 
     if(topText){
-
-      topText.textContent =
-        "Weather";
-
+      topText.textContent = "Weather";
     }
-
 
     if(topIcon){
-
-      topIcon.textContent =
-        "🌡️";
-
+      topIcon.textContent = "🌡️";
     }
-
 
     if(sectionTemp){
-
-      sectionTemp.textContent =
-        "LIVE";
-
+      sectionTemp.textContent = "LIVE";
     }
-
 
     if(sectionText){
-
       sectionText.textContent =
         "Weather temporarily unavailable";
-
     }
-
 
     if(sectionIcon){
-
-      sectionIcon.textContent =
-        "🌡️";
-
+      sectionIcon.textContent = "🌡️";
     }
-
 
   }
 
 }
 
 
-/* ======================================================
-   WEATHER CODE TRANSLATOR
-====================================================== */
-
 function decodeWeather(code){
 
-
   if(code === 0){
-
     return{
-
       text:"CLEAR",
-
       icon:"☀️"
-
     };
-
   }
 
-
-  if(
-    code === 1 ||
-    code === 2
-  ){
-
+  if(code === 1 || code === 2){
     return{
-
       text:"MOSTLY CLEAR",
-
       icon:"🌤️"
-
     };
-
   }
-
 
   if(code === 3){
-
     return{
-
       text:"CLOUDY",
-
       icon:"☁️"
-
     };
-
   }
 
-
-  if(
-    code === 45 ||
-    code === 48
-  ){
-
+  if(code === 45 || code === 48){
     return{
-
       text:"FOG",
-
       icon:"🌫️"
-
     };
-
   }
 
-
   if(
-
     code === 51 ||
-
     code === 53 ||
-
     code === 55 ||
-
     code === 61 ||
-
     code === 63 ||
-
     code === 65 ||
-
     code === 80 ||
-
     code === 81 ||
-
     code === 82
-
   ){
-
     return{
-
       text:"RAIN",
-
       icon:"🌧️"
-
     };
-
   }
 
-
   if(
-
     code === 71 ||
-
     code === 73 ||
-
     code === 75 ||
-
     code === 77 ||
-
     code === 85 ||
-
     code === 86
-
   ){
-
     return{
-
       text:"SNOW",
-
       icon:"❄️"
-
     };
-
   }
-
 
   if(
-
     code === 95 ||
-
     code === 96 ||
-
     code === 99
-
   ){
-
     return{
-
       text:"THUNDERSTORMS",
-
       icon:"⛈️"
-
     };
-
   }
-
 
   return{
-
     text:"CURRENT CONDITIONS",
-
     icon:"🌡️"
-
   };
 
 }
 
-
-/* Load immediately */
-
 updateVegasWeather();
 
-
-/* Refresh every 10 minutes */
-
 setInterval(
-
   updateVegasWeather,
-
   600000
-
 );
 
 
@@ -5305,216 +3006,114 @@ setInterval(
 
 function searchOffers(){
 
-
   const input =
-    document.getElementById(
-      "searchInput"
-    );
-
+    document.getElementById("searchInput");
 
   const query =
     input.value
     .trim()
     .toLowerCase();
 
-
   const offers =
     document.querySelectorAll(
       "#offerGrid .offer"
     );
-
 
   const message =
     document.getElementById(
       "searchMessage"
     );
 
-
   if(!query){
 
+    offers.forEach(card=>{
+      card.style.display="";
+    });
 
-    offers.forEach(
-      card => {
-
-        card.style.display =
-          "";
-
-      }
-    );
-
-
-    message.style.display =
-      "none";
-
+    message.style.display="none";
 
     go("free");
 
-
     return;
-
   }
-
 
   let found = 0;
 
+  offers.forEach(card=>{
 
-  offers.forEach(
-    card => {
+    const text =
+      (
+        (card.dataset.search || "") +
+        " " +
+        card.innerText
+      ).toLowerCase();
 
+    if(text.includes(query)){
 
-      const text =
+      card.style.display="";
+      found++;
 
-        (
+    }else{
 
-          card.dataset.search +
-
-          " " +
-
-          card.innerText
-
-        )
-
-        .toLowerCase();
-
-
-      if(
-        text.includes(query)
-      ){
-
-
-        card.style.display =
-          "";
-
-
-        found++;
-
-
-      }else{
-
-
-        card.style.display =
-          "none";
-
-
-      }
-
+      card.style.display="none";
 
     }
-  );
 
+  });
 
-  message.style.display =
-    "block";
-
+  message.style.display="block";
 
   if(found){
 
-
     message.innerHTML =
-
       "<strong>" +
-
       found +
-
       "</strong> $0 result" +
-
-      (
-        found === 1
-        ? ""
-        : "s"
-      ) +
-
+      (found === 1 ? "" : "s") +
       ' found for "<strong>' +
-
       escapeHTML(query) +
-
       '</strong>".';
-
 
   }else{
 
-
     message.innerHTML =
-
       'No current directory entries matched "<strong>' +
-
       escapeHTML(query) +
-
       '</strong>". Try attractions, fountains, Fremont, family, photo or Bellagio.';
 
-
   }
-
 
   go("free");
 
 }
 
 
-/* ======================================================
-   ENTER KEY SEARCH
-====================================================== */
-
 document
-.getElementById(
-  "searchInput"
-)
+.getElementById("searchInput")
 .addEventListener(
   "keydown",
   function(event){
 
-
-    if(
-      event.key === "Enter"
-    ){
-
+    if(event.key === "Enter"){
       searchOffers();
-
     }
-
 
   }
 );
 
 
-/* ======================================================
-   SAFE SEARCH DISPLAY
-====================================================== */
-
 function escapeHTML(value){
 
-
   return value
-
-    .replaceAll(
-      "&",
-      "&amp;"
-    )
-
-    .replaceAll(
-      "<",
-      "&lt;"
-    )
-
-    .replaceAll(
-      ">",
-      "&gt;"
-    )
-
-    .replaceAll(
-      '"',
-      "&quot;"
-    )
-
-    .replaceAll(
-      "'",
-      "&#039;"
-    );
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
 
 }
 
 </script>
-
 
 </body>
 </html>
